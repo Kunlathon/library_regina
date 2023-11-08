@@ -1,0 +1,12 @@
+CRITICAL - 2023-05-30 08:44:19 --> Undefined variable $grid
+in FCPATH\public\admin_mod\js\author\author_js.php on line 46.
+ 1 FCPATH\public\admin_mod\js\author\author_js.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $grid', 'E:\\xampp-regina\\htdocs\\library_regina\\public\\admin_mod\\js\\author\\author_js.php', 46)
+ 2 APPPATH\Views\admin\administrator.php(52): include('E:\\xampp-regina\\htdocs\\library_regina\\public\\admin_mod\\js\\author\\author_js.php')
+ 3 SYSTEMPATH\View\View.php(213): include('E:\\xampp-regina\\htdocs\\library_regina\\app\\Views\\admin\\administrator.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/administrator', [], true)
+ 6 APPPATH\Controllers\Admin.php(5): view('admin/administrator')
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(64): CodeIgniter\CodeIgniter->run()

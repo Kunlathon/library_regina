@@ -1,0 +1,88 @@
+CRITICAL - 2023-06-14 03:01:04 --> Undefined variable $borrow_count
+in FCPATH\public\admin_mod\borrow_book.php on line 190.
+ 1 FCPATH\public\admin_mod\borrow_book.php(190): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $borrow_count', 'E:\\xampp-regina\\htdocs\\library_regina\\public\\admin_mod\\borrow_book.php', 190)
+ 2 APPPATH\Views\admin\administrator.php(134): include('E:\\xampp-regina\\htdocs\\library_regina\\public\\admin_mod\\borrow_book.php')
+ 3 SYSTEMPATH\View\View.php(213): include('E:\\xampp-regina\\htdocs\\library_regina\\app\\Views\\admin\\administrator.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/administrator', [], true)
+ 6 APPPATH\Controllers\Admin.php(5): view('admin/administrator')
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(64): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-14 04:22:38 --> Invalid numeric literal
+in FCPATH\public\admin_mod\return_book.php on line 63.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/administrator', [], true)
+ 4 APPPATH\Controllers\Admin.php(5): view('admin/administrator')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(64): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-14 04:24:04 --> syntax error, unexpected variable "$set_data_code_b"
+in FCPATH\public\database\class_borrow_book.php on line 512.
+ 1 APPPATH\Views\admin\administrator.php(136): include()
+ 2 SYSTEMPATH\View\View.php(213): include('E:\\xampp-regina\\htdocs\\library_regina\\app\\Views\\admin\\administrator.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/administrator', [], true)
+ 5 APPPATH\Controllers\Admin.php(5): view('admin/administrator')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(64): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-14 14:19:37 --> foreach() argument must be of type array|object, string given
+in APPPATH\Views\admin_mod\return_book\return_book.php on line 48.
+ 1 APPPATH\Views\admin_mod\return_book\return_book.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'E:\\xampp-regina\\htdocs\\library_regina\\app\\Views\\admin_mod\\return_book\\return_book.php', 48)
+ 2 SYSTEMPATH\View\View.php(213): include('E:\\xampp-regina\\htdocs\\library_regina\\app\\Views\\admin_mod\\return_book\\return_book.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin_mod/return_book/return_book', [], true)
+ 5 APPPATH\Controllers\Return_book.php(5): view('admin_mod/return_book/return_book')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Return_book->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Return_book))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(64): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-14 14:19:45 --> foreach() argument must be of type array|object, string given
+in APPPATH\Views\admin_mod\return_book\return_book.php on line 48.
+ 1 APPPATH\Views\admin_mod\return_book\return_book.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'E:\\xampp-regina\\htdocs\\library_regina\\app\\Views\\admin_mod\\return_book\\return_book.php', 48)
+ 2 SYSTEMPATH\View\View.php(213): include('E:\\xampp-regina\\htdocs\\library_regina\\app\\Views\\admin_mod\\return_book\\return_book.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin_mod/return_book/return_book', [], true)
+ 5 APPPATH\Controllers\Return_book.php(5): view('admin_mod/return_book/return_book')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Return_book->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Return_book))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(64): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-14 14:20:03 --> foreach() argument must be of type array|object, string given
+in APPPATH\Views\admin_mod\return_book\return_book.php on line 48.
+ 1 APPPATH\Views\admin_mod\return_book\return_book.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'E:\\xampp-regina\\htdocs\\library_regina\\app\\Views\\admin_mod\\return_book\\return_book.php', 48)
+ 2 SYSTEMPATH\View\View.php(213): include('E:\\xampp-regina\\htdocs\\library_regina\\app\\Views\\admin_mod\\return_book\\return_book.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin_mod/return_book/return_book', [], true)
+ 5 APPPATH\Controllers\Return_book.php(5): view('admin_mod/return_book/return_book')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Return_book->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Return_book))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(64): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-14 14:20:24 --> foreach() argument must be of type array|object, string given
+in APPPATH\Views\admin_mod\return_book\return_book.php on line 48.
+ 1 APPPATH\Views\admin_mod\return_book\return_book.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'E:\\xampp-regina\\htdocs\\library_regina\\app\\Views\\admin_mod\\return_book\\return_book.php', 48)
+ 2 SYSTEMPATH\View\View.php(213): include('E:\\xampp-regina\\htdocs\\library_regina\\app\\Views\\admin_mod\\return_book\\return_book.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin_mod/return_book/return_book', [], true)
+ 5 APPPATH\Controllers\Return_book.php(5): view('admin_mod/return_book/return_book')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Return_book->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Return_book))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(64): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-14 08:40:39 --> Undefined variable $DDCA_NameTh
+in APPPATH\Views\admin_mod\ddc\data_ddc.php on line 61.
+ 1 APPPATH\Views\admin_mod\ddc\data_ddc.php(61): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $DDCA_NameTh', 'E:\\xampp-regina\\htdocs\\library_regina\\app\\Views\\admin_mod\\ddc\\data_ddc.php', 61)
+ 2 SYSTEMPATH\View\View.php(213): include('E:\\xampp-regina\\htdocs\\library_regina\\app\\Views\\admin_mod\\ddc\\data_ddc.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin_mod/ddc/data_ddc', [], true)
+ 5 APPPATH\Controllers\Ddc.php(5): view('admin_mod/ddc/data_ddc')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ddc->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ddc))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(64): CodeIgniter\CodeIgniter->run()

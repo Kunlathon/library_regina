@@ -1,0 +1,33 @@
+CRITICAL - 2023-06-11 12:48:08 --> Maximum execution time of 120 seconds exceeded
+in FCPATH\public\database\pdo_library.php on line 14.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-06-11 13:26:45 --> Maximum execution time of 120 seconds exceeded
+in FCPATH\public\database\pdo_library.php on line 14.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-06-11 13:32:29 --> Undefined variable $CountLibrary
+in FCPATH\public\database\pdo_library.php on line 63.
+ 1 FCPATH\public\database\pdo_library.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $CountLibrary', 'E:\\xampp-regina\\htdocs\\library_regina\\public\\database\\pdo_library.php', 63)
+ 2 FCPATH\public\database\class_borrow_book.php(246): count_library->__construct()
+ 3 FCPATH\public\admin_mod\borrow_book.php(123): borrow_books_items->__construct('00002', '20234', 'Regina ICT', '2023-06-11 13:31:13', '18957')
+ 4 APPPATH\Views\admin\administrator.php(134): include('E:\\xampp-regina\\htdocs\\library_regina\\public\\admin_mod\\borrow_book.php')
+ 5 SYSTEMPATH\View\View.php(213): include('E:\\xampp-regina\\htdocs\\library_regina\\app\\Views\\admin\\administrator.php')
+ 6 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/administrator', [], true)
+ 8 APPPATH\Controllers\Admin.php(5): view('admin/administrator')
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->index()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(64): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-11 13:32:29 --> Undefined variable $conndb_conndatastu
+in FCPATH\public\database\pdo_conndatastu.php on line 34.
+ 1 FCPATH\public\database\pdo_conndatastu.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $conndb_conndatastu', 'E:\\xampp-regina\\htdocs\\library_regina\\public\\database\\pdo_conndatastu.php', 34)
+ 2 FCPATH\public\database\class_data.php(106): count_conndatastu->__construct('127.0.0.1')
+ 3 APPPATH\Views\admin_mod\borrow_book\book_select.php(57): PrintReginaStuDataClass->__construct(16693)
+ 4 SYSTEMPATH\View\View.php(213): include('E:\\xampp-regina\\htdocs\\library_regina\\app\\Views\\admin_mod\\borrow_book\\book_select.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin_mod/borrow_book/book_select', [], true)
+ 7 APPPATH\Controllers\Borrow_book.php(6): view('admin_mod/borrow_book/book_select')
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\borrow_book->index()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\borrow_book))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(64): CodeIgniter\CodeIgniter->run()

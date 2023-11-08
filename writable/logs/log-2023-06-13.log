@@ -1,0 +1,295 @@
+CRITICAL - 2023-06-13 03:29:19 --> Undefined variable $into_borrow_documen
+in FCPATH\public\admin_mod\borrow_book.php on line 104.
+ 1 FCPATH\public\admin_mod\borrow_book.php(104): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $into_borrow_documen', 'E:\\xampp-regina\\htdocs\\library_regina\\public\\admin_mod\\borrow_book.php', 104)
+ 2 APPPATH\Views\admin\administrator.php(134): include('E:\\xampp-regina\\htdocs\\library_regina\\public\\admin_mod\\borrow_book.php')
+ 3 SYSTEMPATH\View\View.php(213): include('E:\\xampp-regina\\htdocs\\library_regina\\app\\Views\\admin\\administrator.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/administrator', [], true)
+ 6 APPPATH\Controllers\Admin.php(5): view('admin/administrator')
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(64): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-13 03:30:34 --> Undefined variable $into_borrow_documen
+in FCPATH\public\admin_mod\borrow_book.php on line 104.
+ 1 FCPATH\public\admin_mod\borrow_book.php(104): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $into_borrow_documen', 'E:\\xampp-regina\\htdocs\\library_regina\\public\\admin_mod\\borrow_book.php', 104)
+ 2 APPPATH\Views\admin\administrator.php(134): include('E:\\xampp-regina\\htdocs\\library_regina\\public\\admin_mod\\borrow_book.php')
+ 3 SYSTEMPATH\View\View.php(213): include('E:\\xampp-regina\\htdocs\\library_regina\\app\\Views\\admin\\administrator.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/administrator', [], true)
+ 6 APPPATH\Controllers\Admin.php(5): view('admin/administrator')
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(64): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-13 03:31:23 --> Call to a member function Run_Borrow_document() on null
+in FCPATH\public\admin_mod\borrow_book.php on line 104.
+ 1 APPPATH\Views\admin\administrator.php(134): include()
+ 2 SYSTEMPATH\View\View.php(213): include('E:\\xampp-regina\\htdocs\\library_regina\\app\\Views\\admin\\administrator.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/administrator', [], true)
+ 5 APPPATH\Controllers\Admin.php(5): view('admin/administrator')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(64): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-13 04:35:04 --> Undefined variable $into_borrow_documen
+in FCPATH\public\admin_mod\borrow_book.php on line 104.
+ 1 FCPATH\public\admin_mod\borrow_book.php(104): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $into_borrow_documen', 'E:\\xampp-regina\\htdocs\\library_regina\\public\\admin_mod\\borrow_book.php', 104)
+ 2 APPPATH\Views\admin\administrator.php(134): include('E:\\xampp-regina\\htdocs\\library_regina\\public\\admin_mod\\borrow_book.php')
+ 3 SYSTEMPATH\View\View.php(213): include('E:\\xampp-regina\\htdocs\\library_regina\\app\\Views\\admin\\administrator.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/administrator', [], true)
+ 6 APPPATH\Controllers\Admin.php(5): view('admin/administrator')
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(64): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-13 04:36:33 --> Undefined variable $into_borrow_documen
+in FCPATH\public\admin_mod\borrow_book.php on line 104.
+ 1 FCPATH\public\admin_mod\borrow_book.php(104): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $into_borrow_documen', 'E:\\xampp-regina\\htdocs\\library_regina\\public\\admin_mod\\borrow_book.php', 104)
+ 2 APPPATH\Views\admin\administrator.php(134): include('E:\\xampp-regina\\htdocs\\library_regina\\public\\admin_mod\\borrow_book.php')
+ 3 SYSTEMPATH\View\View.php(213): include('E:\\xampp-regina\\htdocs\\library_regina\\app\\Views\\admin\\administrator.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/administrator', [], true)
+ 6 APPPATH\Controllers\Admin.php(5): view('admin/administrator')
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(64): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-13 04:37:52 --> Undefined variable $into_borrow_documen
+in FCPATH\public\admin_mod\borrow_book.php on line 104.
+ 1 FCPATH\public\admin_mod\borrow_book.php(104): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $into_borrow_documen', 'E:\\xampp-regina\\htdocs\\library_regina\\public\\admin_mod\\borrow_book.php', 104)
+ 2 APPPATH\Views\admin\administrator.php(134): include('E:\\xampp-regina\\htdocs\\library_regina\\public\\admin_mod\\borrow_book.php')
+ 3 SYSTEMPATH\View\View.php(213): include('E:\\xampp-regina\\htdocs\\library_regina\\app\\Views\\admin\\administrator.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/administrator', [], true)
+ 6 APPPATH\Controllers\Admin.php(5): view('admin/administrator')
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(64): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-13 10:43:44 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in E:\xampp-regina\htdocs\library_regina\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 E:\xampp-regina\htdocs\library_regina\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'library_rc', 3390, '', 0)
+#1 E:\xampp-regina\htdocs\library_regina\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 E:\xampp-regina\htdocs\library_regina\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 E:\xampp-regina\htdocs\library_regina\app\Controllers\UserLogin.php(14): CodeIgniter\Database\BaseConnection->query('SELECT * FROM `...')
+#4 E:\xampp-regina\htdocs\library_regina\system\CodeIgniter.php(934): App\Controllers\UserLogin->LibraryLogin()
+#5 E:\xampp-regina\htdocs\library_regina\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserLogin))
+#6 E:\xampp-regina\htdocs\library_regina\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 E:\xampp-regina\htdocs\library_regina\index.php(64): CodeIgniter\CodeIgniter->run()
+#8 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in E:\xampp-regina\htdocs\library_regina\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 E:\xampp-regina\htdocs\library_regina\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 E:\xampp-regina\htdocs\library_regina\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 E:\xampp-regina\htdocs\library_regina\app\Controllers\UserLogin.php(14): CodeIgniter\Database\BaseConnection->query('SELECT * FROM `...')
+#3 E:\xampp-regina\htdocs\library_regina\system\CodeIgniter.php(934): App\Controllers\UserLogin->LibraryLogin()
+#4 E:\xampp-regina\htdocs\library_regina\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserLogin))
+#5 E:\xampp-regina\htdocs\library_regina\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 E:\xampp-regina\htdocs\library_regina\index.php(64): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-06-13 10:43:44 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Controllers\UserLogin.php(14): CodeIgniter\Database\BaseConnection->query('SELECT * FROM `librarylogin` 
+												  WHERE `IL_Key`=\'rc0468\' 
+												  AND `IL_Pass`=\'b541b46617409ead868f25fc563735d6\' 
+												  AND `IL_Status`=\'1\'')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\UserLogin->LibraryLogin()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserLogin))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(64): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-13 10:44:04 --> Error connecting to the database: ErrorException: mysqli::real_connect(): Error while reading greeting packet. PID=13468 in E:\xampp-regina\htdocs\library_regina\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli::real_co...', 'E:\\xampp-regina...', 173)
+#1 E:\xampp-regina\htdocs\library_regina\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'library_rc', 3390, '', 0)
+#2 E:\xampp-regina\htdocs\library_regina\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#3 E:\xampp-regina\htdocs\library_regina\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#4 E:\xampp-regina\htdocs\library_regina\app\Controllers\UserLogin.php(14): CodeIgniter\Database\BaseConnection->query('SELECT * FROM `...')
+#5 E:\xampp-regina\htdocs\library_regina\system\CodeIgniter.php(934): App\Controllers\UserLogin->LibraryLogin()
+#6 E:\xampp-regina\htdocs\library_regina\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserLogin))
+#7 E:\xampp-regina\htdocs\library_regina\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\xampp-regina\htdocs\library_regina\index.php(64): CodeIgniter\CodeIgniter->run()
+#9 {main}
+
+Next mysqli_sql_exception: MySQL server has gone away in E:\xampp-regina\htdocs\library_regina\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 E:\xampp-regina\htdocs\library_regina\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'library_rc', 3390, '', 0)
+#1 E:\xampp-regina\htdocs\library_regina\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 E:\xampp-regina\htdocs\library_regina\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 E:\xampp-regina\htdocs\library_regina\app\Controllers\UserLogin.php(14): CodeIgniter\Database\BaseConnection->query('SELECT * FROM `...')
+#4 E:\xampp-regina\htdocs\library_regina\system\CodeIgniter.php(934): App\Controllers\UserLogin->LibraryLogin()
+#5 E:\xampp-regina\htdocs\library_regina\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserLogin))
+#6 E:\xampp-regina\htdocs\library_regina\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 E:\xampp-regina\htdocs\library_regina\index.php(64): CodeIgniter\CodeIgniter->run()
+#8 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: MySQL server has gone away in E:\xampp-regina\htdocs\library_regina\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 E:\xampp-regina\htdocs\library_regina\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 E:\xampp-regina\htdocs\library_regina\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 E:\xampp-regina\htdocs\library_regina\app\Controllers\UserLogin.php(14): CodeIgniter\Database\BaseConnection->query('SELECT * FROM `...')
+#3 E:\xampp-regina\htdocs\library_regina\system\CodeIgniter.php(934): App\Controllers\UserLogin->LibraryLogin()
+#4 E:\xampp-regina\htdocs\library_regina\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserLogin))
+#5 E:\xampp-regina\htdocs\library_regina\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 E:\xampp-regina\htdocs\library_regina\index.php(64): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-06-13 10:44:04 --> Unable to connect to the database.
+Main connection [MySQLi]: MySQL server has gone away
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Controllers\UserLogin.php(14): CodeIgniter\Database\BaseConnection->query('SELECT * FROM `librarylogin` 
+												  WHERE `IL_Key`=\'rc0468\' 
+												  AND `IL_Pass`=\'b541b46617409ead868f25fc563735d6\' 
+												  AND `IL_Status`=\'1\'')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\UserLogin->LibraryLogin()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserLogin))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(64): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-13 10:46:12 --> Error connecting to the database: ErrorException: mysqli::real_connect(): Error while reading greeting packet. PID=6344 in E:\xampp-regina\htdocs\library_regina\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli::real_co...', 'E:\\xampp-regina...', 173)
+#1 E:\xampp-regina\htdocs\library_regina\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'library_rc', 3390, '', 0)
+#2 E:\xampp-regina\htdocs\library_regina\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#3 E:\xampp-regina\htdocs\library_regina\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#4 E:\xampp-regina\htdocs\library_regina\app\Controllers\UserLogin.php(14): CodeIgniter\Database\BaseConnection->query('SELECT * FROM `...')
+#5 E:\xampp-regina\htdocs\library_regina\system\CodeIgniter.php(934): App\Controllers\UserLogin->LibraryLogin()
+#6 E:\xampp-regina\htdocs\library_regina\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserLogin))
+#7 E:\xampp-regina\htdocs\library_regina\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\xampp-regina\htdocs\library_regina\index.php(64): CodeIgniter\CodeIgniter->run()
+#9 {main}
+
+Next mysqli_sql_exception: MySQL server has gone away in E:\xampp-regina\htdocs\library_regina\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 E:\xampp-regina\htdocs\library_regina\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'library_rc', 3390, '', 0)
+#1 E:\xampp-regina\htdocs\library_regina\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 E:\xampp-regina\htdocs\library_regina\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 E:\xampp-regina\htdocs\library_regina\app\Controllers\UserLogin.php(14): CodeIgniter\Database\BaseConnection->query('SELECT * FROM `...')
+#4 E:\xampp-regina\htdocs\library_regina\system\CodeIgniter.php(934): App\Controllers\UserLogin->LibraryLogin()
+#5 E:\xampp-regina\htdocs\library_regina\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserLogin))
+#6 E:\xampp-regina\htdocs\library_regina\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 E:\xampp-regina\htdocs\library_regina\index.php(64): CodeIgniter\CodeIgniter->run()
+#8 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: MySQL server has gone away in E:\xampp-regina\htdocs\library_regina\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 E:\xampp-regina\htdocs\library_regina\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 E:\xampp-regina\htdocs\library_regina\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 E:\xampp-regina\htdocs\library_regina\app\Controllers\UserLogin.php(14): CodeIgniter\Database\BaseConnection->query('SELECT * FROM `...')
+#3 E:\xampp-regina\htdocs\library_regina\system\CodeIgniter.php(934): App\Controllers\UserLogin->LibraryLogin()
+#4 E:\xampp-regina\htdocs\library_regina\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserLogin))
+#5 E:\xampp-regina\htdocs\library_regina\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 E:\xampp-regina\htdocs\library_regina\index.php(64): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-06-13 10:46:12 --> Unable to connect to the database.
+Main connection [MySQLi]: MySQL server has gone away
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Controllers\UserLogin.php(14): CodeIgniter\Database\BaseConnection->query('SELECT * FROM `librarylogin` 
+												  WHERE `IL_Key`=\'rc0468\' 
+												  AND `IL_Pass`=\'b541b46617409ead868f25fc563735d6\' 
+												  AND `IL_Status`=\'1\'')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\UserLogin->LibraryLogin()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserLogin))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(64): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-13 11:11:58 --> Array to string conversion
+in FCPATH\public\database\class_borrow_book.php on line 229.
+ 1 FCPATH\public\database\class_borrow_book.php(229): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'E:\\xampp-regina\\htdocs\\library_regina\\public\\database\\class_borrow_book.php', 229)
+ 2 FCPATH\public\admin_mod\borrow_book.php(88): test_books_borrow->__construct('00001', 'test')
+ 3 APPPATH\Views\admin\administrator.php(134): include('E:\\xampp-regina\\htdocs\\library_regina\\public\\admin_mod\\borrow_book.php')
+ 4 SYSTEMPATH\View\View.php(213): include('E:\\xampp-regina\\htdocs\\library_regina\\app\\Views\\admin\\administrator.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/administrator', [], true)
+ 7 APPPATH\Controllers\Admin.php(5): view('admin/administrator')
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->index()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(64): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-13 11:13:31 --> Undefined variable $the_test_books
+in FCPATH\public\admin_mod\borrow_book.php on line 108.
+ 1 FCPATH\public\admin_mod\borrow_book.php(108): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $the_test_books', 'E:\\xampp-regina\\htdocs\\library_regina\\public\\admin_mod\\borrow_book.php', 108)
+ 2 APPPATH\Views\admin\administrator.php(134): include('E:\\xampp-regina\\htdocs\\library_regina\\public\\admin_mod\\borrow_book.php')
+ 3 SYSTEMPATH\View\View.php(213): include('E:\\xampp-regina\\htdocs\\library_regina\\app\\Views\\admin\\administrator.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/administrator', [], true)
+ 6 APPPATH\Controllers\Admin.php(5): view('admin/administrator')
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(64): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-13 11:19:07 --> Undefined variable $count_book_test
+in FCPATH\public\database\class_borrow_book.php on line 196.
+ 1 FCPATH\public\database\class_borrow_book.php(196): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $count_book_test', 'E:\\xampp-regina\\htdocs\\library_regina\\public\\database\\class_borrow_book.php', 196)
+ 2 FCPATH\public\admin_mod\borrow_book.php(84): test_books_data->__construct('ads')
+ 3 APPPATH\Views\admin\administrator.php(134): include('E:\\xampp-regina\\htdocs\\library_regina\\public\\admin_mod\\borrow_book.php')
+ 4 SYSTEMPATH\View\View.php(213): include('E:\\xampp-regina\\htdocs\\library_regina\\app\\Views\\admin\\administrator.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/administrator', [], true)
+ 7 APPPATH\Controllers\Admin.php(5): view('admin/administrator')
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->index()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(64): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-13 11:37:31 --> Undefined variable $test_borrow
+in FCPATH\public\admin_mod\borrow_book.php on line 141.
+ 1 FCPATH\public\admin_mod\borrow_book.php(141): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $test_borrow', 'E:\\xampp-regina\\htdocs\\library_regina\\public\\admin_mod\\borrow_book.php', 141)
+ 2 APPPATH\Views\admin\administrator.php(134): include('E:\\xampp-regina\\htdocs\\library_regina\\public\\admin_mod\\borrow_book.php')
+ 3 SYSTEMPATH\View\View.php(213): include('E:\\xampp-regina\\htdocs\\library_regina\\app\\Views\\admin\\administrator.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/administrator', [], true)
+ 6 APPPATH\Controllers\Admin.php(5): view('admin/administrator')
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(64): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-13 13:23:55 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in E:\xampp-regina\htdocs\library_regina\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 E:\xampp-regina\htdocs\library_regina\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'library_rc', 3390, '', 0)
+#1 E:\xampp-regina\htdocs\library_regina\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 E:\xampp-regina\htdocs\library_regina\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 E:\xampp-regina\htdocs\library_regina\app\Controllers\UserLogin.php(14): CodeIgniter\Database\BaseConnection->query('SELECT * FROM `...')
+#4 E:\xampp-regina\htdocs\library_regina\system\CodeIgniter.php(934): App\Controllers\UserLogin->LibraryLogin()
+#5 E:\xampp-regina\htdocs\library_regina\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserLogin))
+#6 E:\xampp-regina\htdocs\library_regina\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 E:\xampp-regina\htdocs\library_regina\index.php(64): CodeIgniter\CodeIgniter->run()
+#8 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in E:\xampp-regina\htdocs\library_regina\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 E:\xampp-regina\htdocs\library_regina\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 E:\xampp-regina\htdocs\library_regina\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 E:\xampp-regina\htdocs\library_regina\app\Controllers\UserLogin.php(14): CodeIgniter\Database\BaseConnection->query('SELECT * FROM `...')
+#3 E:\xampp-regina\htdocs\library_regina\system\CodeIgniter.php(934): App\Controllers\UserLogin->LibraryLogin()
+#4 E:\xampp-regina\htdocs\library_regina\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserLogin))
+#5 E:\xampp-regina\htdocs\library_regina\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 E:\xampp-regina\htdocs\library_regina\index.php(64): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-06-13 13:23:55 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Controllers\UserLogin.php(14): CodeIgniter\Database\BaseConnection->query('SELECT * FROM `librarylogin` 
+												  WHERE `IL_Key`=\'rc0468\' 
+												  AND `IL_Pass`=\'b541b46617409ead868f25fc563735d6\' 
+												  AND `IL_Status`=\'1\'')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\UserLogin->LibraryLogin()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserLogin))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(64): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-13 13:48:36 --> Undefined variable $books_admin
+in FCPATH\public\admin_mod\borrow_book.php on line 266.
+ 1 FCPATH\public\admin_mod\borrow_book.php(266): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $books_admin', 'E:\\xampp-regina\\htdocs\\library_regina\\public\\admin_mod\\borrow_book.php', 266)
+ 2 APPPATH\Views\admin\administrator.php(134): include('E:\\xampp-regina\\htdocs\\library_regina\\public\\admin_mod\\borrow_book.php')
+ 3 SYSTEMPATH\View\View.php(213): include('E:\\xampp-regina\\htdocs\\library_regina\\app\\Views\\admin\\administrator.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/administrator', [], true)
+ 6 APPPATH\Controllers\Admin.php(5): view('admin/administrator')
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(64): CodeIgniter\CodeIgniter->run()

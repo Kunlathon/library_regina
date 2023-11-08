@@ -1,0 +1,34 @@
+ERROR - 2023-10-05 02:50:01 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in E:\laragon_regina\www\library_regina\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 E:\laragon_regina\www\library_regina\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', 'root', '053282395', 'library_rc', 3390, '', 0)
+#1 E:\laragon_regina\www\library_regina\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 E:\laragon_regina\www\library_regina\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 E:\laragon_regina\www\library_regina\app\Controllers\UserLogin.php(16): CodeIgniter\Database\BaseConnection->query('SELECT * FROM `...')
+#4 E:\laragon_regina\www\library_regina\system\CodeIgniter.php(934): App\Controllers\UserLogin->LibraryLogin()
+#5 E:\laragon_regina\www\library_regina\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserLogin))
+#6 E:\laragon_regina\www\library_regina\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 E:\laragon_regina\www\library_regina\index.php(64): CodeIgniter\CodeIgniter->run()
+#8 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in E:\laragon_regina\www\library_regina\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 E:\laragon_regina\www\library_regina\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 E:\laragon_regina\www\library_regina\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 E:\laragon_regina\www\library_regina\app\Controllers\UserLogin.php(16): CodeIgniter\Database\BaseConnection->query('SELECT * FROM `...')
+#3 E:\laragon_regina\www\library_regina\system\CodeIgniter.php(934): App\Controllers\UserLogin->LibraryLogin()
+#4 E:\laragon_regina\www\library_regina\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserLogin))
+#5 E:\laragon_regina\www\library_regina\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 E:\laragon_regina\www\library_regina\index.php(64): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-10-05 02:50:01 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Controllers\UserLogin.php(16): CodeIgniter\Database\BaseConnection->query('SELECT * FROM `librarylogin` 
+												  WHERE `IL_Key`=\'rc0468\' 
+												  AND `IL_Pass`=\'7a024f97f3e066cab4d0ccf1bcfe14a6\' 
+												  AND `IL_Status`=\'1\'')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\UserLogin->LibraryLogin()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserLogin))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(64): CodeIgniter\CodeIgniter->run()
