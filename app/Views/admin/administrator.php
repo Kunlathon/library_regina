@@ -47,7 +47,7 @@
 	<script src="<?php echo base_url();?>/public/theme/Template/global_assets/js/plugins/ui/drilldown.js"></script>
 <!-- /core JS files -->
 	<?php
-		@$Copy_Library_Mod=strtolower($library_mod);
+		$Copy_Library_Mod=strtolower($library_mod);
 			if(($Copy_Library_Mod=="author")){
 				include("public/admin_mod/js/author/author_js.php");
 			}elseif(($Copy_Library_Mod=="editor")){
@@ -96,12 +96,12 @@
 
 <!--****************************************************************************-->
     <script type="text/javascript">
-    function setScreenHWCookie() {
-        $.cookie('sw', screen.width);
-        //$.cookie('sh',screen.height);
-        return true;
-    }
-    setScreenHWCookie();
+		function setScreenHWCookie() {
+			$.cookie('sw', screen.width);
+			//$.cookie('sh',screen.height);
+			return true;
+		}
+		setScreenHWCookie();
     </script>
  
     <?php

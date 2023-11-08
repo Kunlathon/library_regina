@@ -44,7 +44,16 @@
 		});
 	</script>	
 
-	
+	<script>
+		$(document).ready(function(){
+			$("#print_report").on("click",function(){
+				var book_key=$("#book_key").val();
+					if(book_key!==""){
+						window.open("<?php echo base_url();?>/print_books/books/"+book_key, "_blank");
+					}else{}
+			})
+		})
+	</script>
 <?php
 	$session=session();
 	$InputReportL=\Config\Services::request();
@@ -136,7 +145,16 @@
 	<div class="row">
 		<div class="col-sm-12 col-md-12 col-lg-12" style="font-weight: bold;  font-size: 16px;">
 			<div class="panel-body">
-				<strong style="font-weight: bold;  font-size: 18px;">รายการเล่มหนังสือ : <?php echo $SBL_Books_NameTh;?></strong>
+				<div class="row">
+					<div class="col-sm-6 col-md-6 col-lg-6">
+						<strong style="font-weight: bold;  font-size: 18px;">รายการเล่มหนังสือ : <?php echo $SBL_Books_NameTh;?></strong>						
+					</div>
+					<div class="col-sm-6 col-md-6 col-lg-6">
+						<button type="button" name="print_report" id="print_report" class="btn btn-success">พิมพ์</button>
+						<input type="hidden" name="book_key" id="book_key" value="<?php echo $BL_Key;?>">
+					</div>
+				</div>
+
 			</div>
 			
 			<div class="table-responsive">
