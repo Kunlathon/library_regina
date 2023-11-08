@@ -54,7 +54,7 @@
 							$IL_Group="-";
 						}
 
-						if((isset($login_libraryRow->IL_Time)))){
+						if((isset($login_libraryRow->IL_Time))){
 							$IL_Time=$login_libraryRow->IL_Time;
 						}else{
 							$IL_Time="-";
