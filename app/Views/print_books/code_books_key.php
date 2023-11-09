@@ -153,7 +153,7 @@
                 </table>
             
                 <table width="100%" border="1" cellspacing="0" cellpadding="0">
-                </tr>
+               
 
     <?php
         $BL_Key=$books;
@@ -171,7 +171,35 @@
 //------------------------------------------------------------------------------------------
             ?>
 <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-
+    <?php
+        $Count_Books=new Int_Library_Books("count",$BL_Key);
+            if(($Count_Books->CallCountBooks()==1)){ ?>
+<!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+            <tr>
+                <td>
+                    <div><center><img  src="https://chart.googleapis.com/chart?chs=100x100&cht=qr&chl=<?php echo base_url();?>print_books/books/<?php echo $book_no;?>&choe=UTF-8" title="<?php echo $stsyem_library_name." : ".$book_no;?>"></center></div>
+                    <div><center><?php echo  $Barcode_generator->getBarcode($book_no,$Barcode_generator::TYPE_CODE_128,2,40);?></center></div>
+                    <div><center><small><?php echo $stsyem_library_name." : ".$book_no;?></small></center></div>
+                </td>
+                <td>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                </td>
+                <td>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                </td>
+                <td>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                </td>
+            </tr>
+<!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+    <?php   }else{ ?>
+<!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
     <?php
             if(($PLBCount%4==0)){ ?>
                 </tr>
@@ -188,6 +216,13 @@
                         <div><center><small><?php echo $stsyem_library_name." : ".$book_no;?></small></center></div>
                     </td>
     <?php   } ?>
+<!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->        
+    <?php   }  ?>
+
+
+
+
+
 
 
 
@@ -200,7 +235,7 @@
     <?php   }else{} ?>      
 
 
-            </tr>
+         
 
 
                 </table>
@@ -237,6 +272,35 @@
                 ?>
                 <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
 
+    <?php
+        $Count_Books=new Int_Library_Books("count",$BL_Key);
+            if(($Count_Books->CallCountBooks()==1)){ ?>
+<!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+            <tr>
+                <td>
+                    <div><center><img  src="https://chart.googleapis.com/chart?chs=100x100&cht=qr&chl=<?php echo base_url();?>print_books/books/<?php echo $book_no;?>&choe=UTF-8" title="<?php echo $stsyem_library_name." : ".$book_no;?>"></center></div>
+                    <div><center><?php echo  $Barcode_generator->getBarcode($book_no,$Barcode_generator::TYPE_CODE_128,2,40);?></center></div>
+                    <div><center><small><?php echo $stsyem_library_name." : ".$book_no;?></small></center></div>
+                </td>
+                <td>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                </td>
+                <td>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                </td>
+                <td>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                </td>
+            </tr>
+<!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+    <?php   }else{ ?>
+<!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
                 <?php
                         if(($PLBCount%4==0)){ ?>
                 </tr>
@@ -253,6 +317,10 @@
                         <div><center><small><?php echo $stsyem_library_name." : ".$book_no;?></small></center></div>
                     </td>
                 <?php   } ?>
+<!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+    <?php   }  ?>
+
+
 
 
 

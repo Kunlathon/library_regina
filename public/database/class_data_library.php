@@ -79,6 +79,49 @@
 		}
 	}  ?>
 
+
+
+<?php
+	//จำนวนหนังสือ
+	class Int_Library_Books{
+		public $ILB_Type,$TLB_BooksKey;
+		public $int_count_books;
+		function __construct($ILB_Type,$TLB_BooksKey){
+			$PDO_library=new count_library();
+			$CountLibrary=$PDO_library->CallCountLibrary();	
+			$this->ILB_Type=$ILB_Type;
+			$this->TLB_BooksKey=$TLB_BooksKey;
+			$int_count_books=0;
+				if(($this->ILB_Type=="count")){
+					try{
+						$ILB_Count_Sql="SELECT COUNT(`LLB_Key`) AS `int_count_books` 
+									    FROM `library_listbooks` 
+										WHERE `Books_Key`='{$this->TLB_BooksKey}';";
+							if(($ILB_Count_Rs=$CountLibrary->query($ILB_Count_Sql))){
+								$ILB_Count_Row=$ILB_Count_Rs->Fetch(PDO::FETCH_ASSOC);
+									if((is_array($ILB_Count_Row) and count($ILB_Count_Row))){
+										$int_count_books=$ILB_Count_Row["int_count_books"];
+									}else{
+										$int_count_books=0;
+									}
+							}else{
+								$int_count_books=0;
+							}
+					}catch(PDOException $e){
+						$int_count_books=0;
+					}
+				}else{
+					$int_count_books=0;
+				}
+			$CountLibrary=null;
+			$this->int_count_books=$int_count_books;
+		}function CallCountBooks(){
+			return $this->int_count_books;
+		}
+	}
+?>
+
+
 <?php
 	class MD_LibraryBooks{ //การจัดการข้อมูลหนังสือ
 		public $MDLB_Type,$MDLB_BK,$MDLB_BNT,$MDLB_BNE,$MDLB_BB,$MDLB_BI,$MDLB_BP,$MDLB_BT,$MDLB_LA,$MDLB_LT,$MDLB_LE,$MDLB_LTr,$MDLB_LP,$MDLB_DDCB,$MDLB_DDCA,$MDLB_BPA,$MDLB_BYA,$MDLB_IK,$MDLB_ACode;
@@ -152,6 +195,7 @@
 <?php
 	class MD_Library_Listbooks{ //การจัดการ รายการหนังสือ (เลขทะเบียน)
 		public $MDLL_Type,$MDLL_LLB_Key,$MDLL_LLB_Time,$MDLL_Books_Key,$MDLL_LAd_No,$MDLL_StatusNo;
+		public $ErrorMDLL,$LLB_Key,$ArrayMDLL;
 		function __construct($MDLL_Type,$MDLL_LLB_Key,$MDLL_LLB_Time,$MDLL_Books_Key,$MDLL_LAd_No,$MDLL_StatusNo){
 			$this->MDLL_Type=$MDLL_Type;
 			$this->MDLL_LLB_Key=$MDLL_LLB_Key;
