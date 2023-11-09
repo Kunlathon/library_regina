@@ -20,7 +20,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>ระบบห้องสมุด Print Code Books</title>
 
-        <link href="<?php echo base_url();?>/public/theme/Template/layout_4/LTR/default/full/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
 
 <!--Code Print css-->
         <link rel="stylesheet" href="<?php echo base_url();?>/public/code_js/print_css_js/css/normalize.css">
@@ -95,7 +94,6 @@
     ?>
 
 <!-- Core JS files -->
-    <script src="<?php echo base_url();?>/public/theme/Template/global_assets/js/core/libraries/jquery.min.js"></script>
 	<script src="<?php echo base_url();?>/public/theme/Template/global_assets/js/core/libraries/bootstrap.min.js"></script>
 <!-- /core JS files -->	
 <!--Code Print js-->
@@ -142,28 +140,25 @@
                 </div>
             </div>
 
-            <div class="row">
-                <div class="col-<?php echo $grid;?>-12">
-                    <section class="sheet padding-10mm imgA">
-                   
     <?php
         $stsyem_library_name="RC_Library1";
     ?>
-                       
-                            <div class="row">
-                                <div class="col-<?php echo $grid;?>-12">
-                                    สำเนา 1 <?php echo "BookKey : ".$books." (".$stsyem_library_name.")";?>
-                                </div>    
-                            </div><br>
 
+            <section class="sheet padding-10mm imgA">
 
-                        
-                            <div class="row">
-                                
+                <table width="100%" border="0">
+                    <tr>
+                        <td><div>สำเนา 1 <?php echo "BookKey : ".$books." (".$stsyem_library_name.")";?></div></td>
+                    </tr>
+                </table>
+            
+                <table width="100%" border="1">
+                
+
     <?php
         $BL_Key=$books;
             if((isset($BL_Key))){
-                $PLBCount=1;
+                $PLBCount=0;
                 $PrintListbooks=new MD_Library_Listbooks("RowArray",$BL_Key,"-","-","-","-");
                 foreach($PrintListbooks->CallArrayMDLL() as $rc_book=>$PrintListbooksRow){ 
                 $Listbooks_Status=$PrintListbooksRow["Li_StatusNo"];
@@ -176,93 +171,100 @@
 //------------------------------------------------------------------------------------------
             ?>
 <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-                    
-                        <div class="col-<?php echo $grid;?>-3">
-                            <div class="img-thumbnail">
-                                <div><center><img class="img-thumbnail" src="https://chart.googleapis.com/chart?chs=100x100&cht=qr&chl=<?php echo base_url();?>print_books/books/<?php echo $book_no;?>&choe=UTF-8" title="<?php echo $stsyem_library_name." : ".$book_no;?>"></center></div>
-                                <div><center><?php echo  $Barcode_generator->getBarcode($book_no,$Barcode_generator::TYPE_CODE_128,2,40);?></center></div>
-                                <div><center><small><?php echo $stsyem_library_name." : ".$book_no;?></small></center></div>
-                            </div>
-                        </div>
-                  
+
+    <?php
+            if(($PLBCount%4==0)){ ?>
+                </tr>
+                <tr>
+                    <td>
+                        <div><center><img class="img-thumbnail" src="https://chart.googleapis.com/chart?chs=100x100&cht=qr&chl=<?php echo base_url();?>print_books/books/<?php echo $book_no;?>&choe=UTF-8" title="<?php echo $stsyem_library_name." : ".$book_no;?>"></center></div>
+                        <div><center><?php echo  $Barcode_generator->getBarcode($book_no,$Barcode_generator::TYPE_CODE_128,2,40);?></center></div>
+                        <div><center><small><?php echo $stsyem_library_name." : ".$book_no;?></small></center></div>
+                    </td>
+    <?php   }else{  ?>
+                    <td>
+                        <div><center><img class="img-thumbnail" src="https://chart.googleapis.com/chart?chs=100x100&cht=qr&chl=<?php echo base_url();?>print_books/books/<?php echo $book_no;?>&choe=UTF-8" title="<?php echo $stsyem_library_name." : ".$book_no;?>"></center></div>
+                        <div><center><?php echo  $Barcode_generator->getBarcode($book_no,$Barcode_generator::TYPE_CODE_128,2,40);?></center></div>
+                        <div><center><small><?php echo $stsyem_library_name." : ".$book_no;?></small></center></div>
+                    </td>
+    <?php   } ?>
+
+
+
+
 <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-    <?php	
+<?php	
             $PLBCount=$PLBCount+1;
                 } ?>		
+              
+    <?php   }else{} ?>      
 
-    <?php   }else{} ?>                          
-
-                            
-                             
-                            </div>
-                        
+                </table>
 
 
-
-                    </section>            
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-<?php echo $grid;?>-12">
-                    <section class="sheet padding-10mm imgA">
-                   
-    <?php
-        $stsyem_library_name="RC_Library1";
-    ?>
-                       
-                            <div class="row">
-                                <div class="col-<?php echo $grid;?>-12">
-                                    สำเนา 2 <?php echo "BookKey : ".$books." (".$stsyem_library_name.")";?>
-                                </div>    
-                            </div><br>
+            </section>
 
 
-                        
-                            <div class="row">
-                                
-    <?php
-        $BL_Key=$books;
-            if((isset($BL_Key))){
-                $PLBCount=1;
-                $PrintListbooks=new MD_Library_Listbooks("RowArray",$BL_Key,"-","-","-","-");
-                foreach($PrintListbooks->CallArrayMDLL() as $rc_book=>$PrintListbooksRow){ 
-                $Listbooks_Status=$PrintListbooksRow["Li_StatusNo"];
+            <section class="sheet padding-10mm imgA">
+
+                <table width="100%" border="0">
+                    <tr>
+                        <td><div>สำเนา 2 <?php echo "BookKey : ".$books." (".$stsyem_library_name.")";?></div></td>
+                    </tr>
+                </table>
+
+                <table width="100%" border="1">
+
+
+                <?php
+                    $BL_Key=$books;
+                        if((isset($BL_Key))){
+                            $PLBCount=0;
+                            $PrintListbooks=new MD_Library_Listbooks("RowArray",$BL_Key,"-","-","-","-");
+                            foreach($PrintListbooks->CallArrayMDLL() as $rc_book=>$PrintListbooksRow){ 
+                                $Listbooks_Status=$PrintListbooksRow["Li_StatusNo"];
 //------------------------------------------------------------------------------------------	
-                    $book_no=$PrintListbooksRow["LLB_Key"];	
-                    $DataAdder=new ManagementAdder($PrintListbooksRow["LAd_No"],"-","read_txt");
-                    $DataStatus=new ManagementStatus($PrintListbooksRow["Li_StatusNo"],"-","-","read_txt"); 
+                                $book_no=$PrintListbooksRow["LLB_Key"];	
+                                $DataAdder=new ManagementAdder($PrintListbooksRow["LAd_No"],"-","read_txt");
+                                $DataStatus=new ManagementStatus($PrintListbooksRow["Li_StatusNo"],"-","-","read_txt"); 
 //------------------------------------------------------------------------------------------
-                    $Barcode_generator=new Picqer\Barcode\BarcodeGeneratorHTML();
+                                $Barcode_generator=new Picqer\Barcode\BarcodeGeneratorHTML();
 //------------------------------------------------------------------------------------------
-            ?>
-<!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-                    
-                        <div class="col-<?php echo $grid;?>-3">
-                            <div class="img-thumbnail">
-                                <div><center><img class="img-thumbnail" src="https://chart.googleapis.com/chart?chs=100x100&cht=qr&chl=<?php echo base_url();?>print_books/books/<?php echo $book_no;?>&choe=UTF-8" title="<?php echo $stsyem_library_name." : ".$book_no;?>"></center></div>
-                                <div><center><?php echo  $Barcode_generator->getBarcode($book_no,$Barcode_generator::TYPE_CODE_128,2,40);?></center></div>
-                                <div><center><small><?php echo $stsyem_library_name." : ".$book_no;?></small></center></div>					
-                            </div>
-                        </div>
-                  
-<!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-    <?php	
-            $PLBCount=$PLBCount+1;
+                ?>
+                <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+
+                <?php
+                        if(($PLBCount%4==0)){ ?>
+                </tr>
+                <tr>
+                    <td>
+                        <div><center><img class="img-thumbnail" src="https://chart.googleapis.com/chart?chs=100x100&cht=qr&chl=<?php echo base_url();?>print_books/books/<?php echo $book_no;?>&choe=UTF-8" title="<?php echo $stsyem_library_name." : ".$book_no;?>"></center></div>
+                        <div><center><?php echo  $Barcode_generator->getBarcode($book_no,$Barcode_generator::TYPE_CODE_128,2,40);?></center></div>
+                        <div><center><small><?php echo $stsyem_library_name." : ".$book_no;?></small></center></div>
+                    </td>
+                <?php   }else{  ?>
+                    <td>
+                        <div><center><img class="img-thumbnail" src="https://chart.googleapis.com/chart?chs=100x100&cht=qr&chl=<?php echo base_url();?>print_books/books/<?php echo $book_no;?>&choe=UTF-8" title="<?php echo $stsyem_library_name." : ".$book_no;?>"></center></div>
+                        <div><center><?php echo  $Barcode_generator->getBarcode($book_no,$Barcode_generator::TYPE_CODE_128,2,40);?></center></div>
+                        <div><center><small><?php echo $stsyem_library_name." : ".$book_no;?></small></center></div>
+                    </td>
+                <?php   } ?>
+
+
+
+
+                <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+                <?php	
+                $PLBCount=$PLBCount+1;
                 } ?>		
 
-    <?php   }else{} ?>                          
+                <?php   }else{} ?>      
 
-                            
-                             
-                            </div>
-                        
+                </table>
 
 
+            </section>           
 
-                    </section>            
-                </div>
-            </div>
             
         </body>
     </html>	
