@@ -6,14 +6,14 @@
 			if($_SESSION["IL_Status"]==1){					
 				//$DDCB_NO=$InputRB->getPost('DDCB_NO');
 
-                include("public/database/pdo_data.php");
-                include("public/database/pdo_conndatastu.php");
-                include("public/database/class_data.php");
+                include(APPPATH."Database-pdo/pdo_data.php");
+                include(APPPATH."Database-pdo/pdo_conndatastu.php");
+                include(APPPATH."Database-pdo/class_data.php");
                         
-                include("public/database/pdo_library.php");
-                include("public/database/class_library.php");
-                include("public/database/class_data_library.php");
-                include("public/database/class_borrow_book.php"); ?>
+                include(APPPATH."Database-pdo/pdo_library.php");
+                include(APPPATH."Database-pdo/class_library.php");
+                include(APPPATH."Database-pdo/class_data_library.php");
+                include(APPPATH."Database-pdo/class_borrow_book.php"); ?>
 <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
 <script type="text/javascript">
     function setScreenHWCookie() {

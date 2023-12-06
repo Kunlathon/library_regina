@@ -33,15 +33,26 @@
 	$InputDD=\Config\Services::request();
 		if(($session->has("IL_Key")>=1)){
 			if(($_SESSION["IL_Status"]==1)){
-				include("public/database/pdo_library.php");
-				include("public/database/class_library.php");					
+				include(APPPATH."Database-pdo/pdo_library.php");
+				include(APPPATH."Database-pdo/class_library.php");					
 				
                 $DDCA_No=$InputDD->getPost('DDCA_No');
 
                 $DataDDCA_RowId=new ManagementDDCA($DDCA_No,"-","-","RowId");
                 foreach($DataDDCA_RowId->RowAllManagementDDCA() as $books=>$DDCA_RowId){
-                    @$DDCA_NameTh=$DDCA_RowId["DDCA_TxtTh"];
-					@$DDCA_NameEh=$DDCA_RowId["DDCA_TxtEh"];
+                    
+                    if((isset($DDCA_RowId["DDCA_TxtTh"]))){
+                        $DDCA_NameTh=$DDCA_RowId["DDCA_TxtTh"];
+                    }else{
+                        $DDCA_NameTh="-";
+                    }
+
+                    if((isset($DDCA_RowId["DDCA_TxtEh"]))){
+					    $DDCA_NameEh=$DDCA_RowId["DDCA_TxtEh"];
+                    }else{
+                        $DDCA_NameEh="-";
+                    }
+                    
                 }
 
 

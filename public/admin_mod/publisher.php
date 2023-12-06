@@ -1,6 +1,6 @@
 <?php
-	include("public/database/pdo_library.php");
-	include("public/database/class_library.php");
+	include(APPPATH."Database-pdo/pdo_library.php");
+	include(APPPATH."Database-pdo/class_library.php");
 ?>
 
 <div class="page-header">
@@ -30,7 +30,12 @@
 		<div class="content-wrapper">
 
 	<?php
-		@$manage=filter_input(INPUT_POST,'manage');
+		if((isset($_POST["manage"]))){
+			$manage=filter_input(INPUT_POST,'manage');
+		}else{
+			$manage=null;
+		}
+
 			if(($manage=="form_add")){ ?>
 
 	<div class="row">

@@ -4,9 +4,9 @@
 	$InputDBR=\Config\Services::request();
 		if(($session->has("IL_Key")>=1)){
 			if(($_SESSION["IL_Status"]==1)){
-				include("public/database/pdo_library.php");	
+				include(APPPATH."Database-pdo/pdo_library.php");	
 				//include("public/database/class_library.php");
-				include("public/database/class_data_library.php");
+				include(APPPATH."Database-pdo/class_data_library.php");
 				$BR_Key=$InputDBR->getPost('BR_Key');
 				$Delete_Books=new MD_Library_Listbooks("Delete",$BR_Key,"-","-","-","-");
 				$Error_Delete=$Delete_Books->CallMLLError(); ?>

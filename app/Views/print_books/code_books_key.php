@@ -4,9 +4,9 @@
     $InputCBK=\Config\Services::request();
     if(($session->has("IL_Key")>=1)){
         if(($_SESSION["IL_Status"]==1)){
-            include("public/database/pdo_library.php");	
-            include("public/database/class_library.php");
-            include("public/database/class_data_library.php");	
+            include(APPPATH."Database-pdo/pdo_library.php");	
+            include(APPPATH."Database-pdo/class_library.php");
+            include(APPPATH."Database-pdo/class_data_library.php");	
 //----------------------------------------------------------------------------------------------------------
             include("public/add-ons/php-barcode-generator-master/src/BarcodeGenerator.php");
             include("public/add-ons/php-barcode-generator-master/src/BarcodeGeneratorHTML.php");
@@ -176,22 +176,22 @@
             if(($Count_Books->CallCountBooks()==1)){ ?>
 <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
             <tr>
-                <td>
+                <td width="25%">
                     <div><center><img  src="https://chart.googleapis.com/chart?chs=100x100&cht=qr&chl=<?php echo base_url();?>print_books/books/<?php echo $book_no;?>&choe=UTF-8" title="<?php echo $stsyem_library_name." : ".$book_no;?>"></center></div>
                     <div><center><?php echo  $Barcode_generator->getBarcode($book_no,$Barcode_generator::TYPE_CODE_128,2,40);?></center></div>
                     <div><center><small><?php echo $stsyem_library_name." : ".$book_no;?></small></center></div>
                 </td>
-                <td>
+                <td width="25%">
                     <div>&nbsp;</div>
                     <div>&nbsp;</div>
                     <div>&nbsp;</div>
                 </td>
-                <td>
+                <td width="25%">
                     <div>&nbsp;</div>
                     <div>&nbsp;</div>
                     <div>&nbsp;</div>
                 </td>
-                <td>
+                <td width="25%">
                     <div>&nbsp;</div>
                     <div>&nbsp;</div>
                     <div>&nbsp;</div>
@@ -204,13 +204,13 @@
             if(($PLBCount%4==0)){ ?>
                 </tr>
                 <tr>
-                    <td>
+                    <td width="25%">
                         <div><center><img  src="https://chart.googleapis.com/chart?chs=100x100&cht=qr&chl=<?php echo base_url();?>print_books/books/<?php echo $book_no;?>&choe=UTF-8" title="<?php echo $stsyem_library_name." : ".$book_no;?>"></center></div>
                         <div><center><?php echo  $Barcode_generator->getBarcode($book_no,$Barcode_generator::TYPE_CODE_128,2,40);?></center></div>
                         <div><center><small><?php echo $stsyem_library_name." : ".$book_no;?></small></center></div>
                     </td>
     <?php   }else{  ?>
-                    <td>
+                    <td width="25%">
                         <div><center><img src="https://chart.googleapis.com/chart?chs=100x100&cht=qr&chl=<?php echo base_url();?>print_books/books/<?php echo $book_no;?>&choe=UTF-8" title="<?php echo $stsyem_library_name." : ".$book_no;?>"></center></div>
                         <div><center><?php echo  $Barcode_generator->getBarcode($book_no,$Barcode_generator::TYPE_CODE_128,2,40);?></center></div>
                         <div><center><small><?php echo $stsyem_library_name." : ".$book_no;?></small></center></div>
@@ -277,22 +277,22 @@
             if(($Count_Books->CallCountBooks()==1)){ ?>
 <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
             <tr>
-                <td>
+                <td width="25%">
                     <div><center><img  src="https://chart.googleapis.com/chart?chs=100x100&cht=qr&chl=<?php echo base_url();?>print_books/books/<?php echo $book_no;?>&choe=UTF-8" title="<?php echo $stsyem_library_name." : ".$book_no;?>"></center></div>
                     <div><center><?php echo  $Barcode_generator->getBarcode($book_no,$Barcode_generator::TYPE_CODE_128,2,40);?></center></div>
                     <div><center><small><?php echo $stsyem_library_name." : ".$book_no;?></small></center></div>
                 </td>
-                <td>
+                <td width="25%">
                     <div>&nbsp;</div>
                     <div>&nbsp;</div>
                     <div>&nbsp;</div>
                 </td>
-                <td>
+                <td width="25%">
                     <div>&nbsp;</div>
                     <div>&nbsp;</div>
                     <div>&nbsp;</div>
                 </td>
-                <td>
+                <td width="25%">
                     <div>&nbsp;</div>
                     <div>&nbsp;</div>
                     <div>&nbsp;</div>
@@ -305,13 +305,13 @@
                         if(($PLBCount%4==0)){ ?>
                 </tr>
                 <tr>
-                    <td>
+                    <td width="25%">
                         <div><center><img  src="https://chart.googleapis.com/chart?chs=100x100&cht=qr&chl=<?php echo base_url();?>print_books/books/<?php echo $book_no;?>&choe=UTF-8" title="<?php echo $stsyem_library_name." : ".$book_no;?>"></center></div>
                         <div><center><?php echo  $Barcode_generator->getBarcode($book_no,$Barcode_generator::TYPE_CODE_128,2,40);?></center></div>
                         <div><center><small><?php echo $stsyem_library_name." : ".$book_no;?></small></center></div>
                     </td>
                 <?php   }else{  ?>
-                    <td>
+                    <td width="25%">
                         <div><center><img  src="https://chart.googleapis.com/chart?chs=100x100&cht=qr&chl=<?php echo base_url();?>print_books/books/<?php echo $book_no;?>&choe=UTF-8" title="<?php echo $stsyem_library_name." : ".$book_no;?>"></center></div>
                         <div><center><?php echo  $Barcode_generator->getBarcode($book_no,$Barcode_generator::TYPE_CODE_128,2,40);?></center></div>
                         <div><center><small><?php echo $stsyem_library_name." : ".$book_no;?></small></center></div>

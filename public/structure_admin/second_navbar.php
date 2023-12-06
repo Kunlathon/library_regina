@@ -43,7 +43,7 @@
 							<li><a href="<?php echo base_url();?>admin?library_mod=books_library"><i class="icon-align-center-horizontal"></i>&nbsp;เพิ่มหนังสือเข้าห้องสมุด</a></li>
 							<li><a href="<?php echo base_url();?>admin?library_mod=books_registration"><i class="icon-align-center-horizontal"></i>&nbsp;การจัดการเลขทะเบียนหนังสือ</a></li>
 						<li class="dropdown-header">รายงาน</li>
-							<li><a href="<?php echo base_url();?>admin?library_mod=report_library"><i class="icon-align-center-horizontal"></i>&nbsp;รายงานข้อมูลหนังสือ</a></li>
+							<li><a href="<?php echo base_url();?>admin?library_mod=report_library"><i class="icon-align-center-horizontal"></i>&nbsp;ข้อมูลหนังสือ-ค้นหา</a></li>
 					</ul>
 				</li>				
 				

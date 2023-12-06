@@ -3,8 +3,8 @@
 		if(($session->has("IL_Key")>=1)){ 
 			if(($_SESSION["IL_Status"]==1)){ 
 				$library_mod=isset($_GET["library_mod"]) ? $_GET["library_mod"] : "books_home";
-				//include("public/database/pdo_library.php");
-				//include("public/database/class_library.php");	
+				//include(APPPATH."Database-pdo/pdo_library.php");
+				//include(APPPATH."Database-pdo/class_library.php");	
 			?>
 <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
 <!DOCTYPE html>

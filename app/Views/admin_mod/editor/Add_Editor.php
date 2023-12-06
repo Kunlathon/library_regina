@@ -4,8 +4,8 @@
 	$InputAE=\Config\Services::request();
 		if(($session->has("IL_Key")>=1)){
 			if(($_SESSION["IL_Status"]==1)){
-				include("public/database/pdo_library.php");
-				include("public/database/class_library.php");					
+				include(APPPATH."Database-pdo/pdo_library.php");
+				include(APPPATH."Database-pdo/class_library.php");					
 				$LE_Txt=$InputAE->getPost('LE_Txt');
 					if((isset($LE_Txt))){
 						$Add_Editor=new ManagementEditor("-",$LE_Txt,"Add");

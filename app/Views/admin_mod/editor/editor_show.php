@@ -72,8 +72,8 @@
 		if(($session->has("IL_Key")>=1)){
 			if(($_SESSION["IL_Status"]==1)){ ?>
 	<?php
-		include("public/database/pdo_library.php");
-		include("public/database/class_library.php");	
+		include(APPPATH."Database-pdo/pdo_library.php");
+		include(APPPATH."Database-pdo/class_library.php");	
 	?>
 				<div class="row">
 					<div class="col-<?php echo $grid;?>-12">

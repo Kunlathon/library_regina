@@ -2,9 +2,9 @@
 <?php
 	$session=session();
 //----------------------------------------------------------------------------------------------------------				
-				include("public/database/pdo_library.php");	
-				include("public/database/class_library.php");
-				include("public/database/class_data_library.php");	
+				include(APPPATH."Database-pdo/pdo_library.php");	
+				include(APPPATH."Database-pdo/class_library.php");
+				include(APPPATH."Database-pdo/class_data_library.php");	
 //----------------------------------------------------------------------------------------------------------
 				include("public/add-ons/php-barcode-generator-master/src/BarcodeGenerator.php");
 				include("public/add-ons/php-barcode-generator-master/src/BarcodeGeneratorHTML.php");

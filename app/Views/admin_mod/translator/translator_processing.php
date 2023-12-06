@@ -3,8 +3,8 @@
 	$input_process=\Config\Services::request();
 		if(($session->has("IL_Key")>=1)){
 			if(($_SESSION["IL_Status"]==1)){
-				include("public/database/pdo_library.php");
-				include("public/database/class_library.php");					
+				include(APPPATH."Database-pdo/pdo_library.php");
+				include(APPPATH."Database-pdo/class_library.php");					
                 $manage=$input_process->getPost('manage');   
                     if(($manage=="process_add")){
                         $LTr_Txt=$input_process->getPost('LTr_Txt');

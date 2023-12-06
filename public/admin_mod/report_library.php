@@ -2,7 +2,7 @@
 		<div class="page-header-content">
 			<div class="page-title">
 				<h4>
-					<span class="text-semibold">ข้อมูลพื้นฐานหนังสือ</span>&nbsp;-&nbsp; รายงานข้อมูลหนังสือ
+					<span class="text-semibold">ข้อมูลพื้นฐานหนังสือ</span>&nbsp;-&nbsp; ข้อมูลหนังสือ-ค้นหา
 					<small class="display-block">Management&nbsp;Information&nbsp;System&nbsp;Regina&nbsp;Library</small>
 				</h4>
 			</div>
