@@ -200,6 +200,45 @@
 <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
     <?php   }else{ ?>
 <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+
+            <?php
+                if(($Count_Books->CallCountBooks()==2)){ ?>
+<!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+
+<?php
+            if(($PLBCount%2==0)){ ?>
+                </tr>
+                <tr>
+                    
+                    <td width="25%">
+                        <div><center><img  src="https://chart.googleapis.com/chart?chs=100x100&cht=qr&chl=<?php echo base_url();?>print_books/books/<?php echo $book_no;?>&choe=UTF-8" title="<?php echo $stsyem_library_name." : ".$book_no;?>"></center></div>
+                        <div><center><?php echo  $Barcode_generator->getBarcode($book_no,$Barcode_generator::TYPE_CODE_128,2,40);?></center></div>
+                        <div><center><small><?php echo $stsyem_library_name." : ".$book_no;?></small></center></div>
+                    </td>
+
+
+    <?php   }else{  ?>
+                    <td width="25%">
+                        <div><center><img src="https://chart.googleapis.com/chart?chs=100x100&cht=qr&chl=<?php echo base_url();?>print_books/books/<?php echo $book_no;?>&choe=UTF-8" title="<?php echo $stsyem_library_name." : ".$book_no;?>"></center></div>
+                        <div><center><?php echo  $Barcode_generator->getBarcode($book_no,$Barcode_generator::TYPE_CODE_128,2,40);?></center></div>
+                        <div><center><small><?php echo $stsyem_library_name." : ".$book_no;?></small></center></div>
+                    </td>
+                    <td width="25%">
+                        <div>&nbsp;</div>
+                        <div>&nbsp;</div>
+                        <div>&nbsp;</div>
+                    </td>         
+                    <td width="25%">
+                        <div>&nbsp;</div>
+                        <div>&nbsp;</div>
+                        <div>&nbsp;</div>
+                    </td>           
+    <?php   } ?>
+
+<!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+            <?php    }else{ ?>
+<!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+
     <?php
             if(($PLBCount%4==0)){ ?>
                 </tr>
@@ -216,6 +255,15 @@
                         <div><center><small><?php echo $stsyem_library_name." : ".$book_no;?></small></center></div>
                     </td>
     <?php   } ?>
+
+<!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+            <?php    }?>
+
+
+
+
+
+
 <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->        
     <?php   }  ?>
 
@@ -301,8 +349,46 @@
 <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
     <?php   }else{ ?>
 <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-                <?php
-                        if(($PLBCount%4==0)){ ?>
+<?php
+                if(($Count_Books->CallCountBooks()==2)){ ?>
+<!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+
+<?php
+            if(($PLBCount%2==0)){ ?>
+                </tr>
+                <tr>
+                    
+                    <td width="25%">
+                        <div><center><img  src="https://chart.googleapis.com/chart?chs=100x100&cht=qr&chl=<?php echo base_url();?>print_books/books/<?php echo $book_no;?>&choe=UTF-8" title="<?php echo $stsyem_library_name." : ".$book_no;?>"></center></div>
+                        <div><center><?php echo  $Barcode_generator->getBarcode($book_no,$Barcode_generator::TYPE_CODE_128,2,40);?></center></div>
+                        <div><center><small><?php echo $stsyem_library_name." : ".$book_no;?></small></center></div>
+                    </td>
+
+
+    <?php   }else{  ?>
+                    <td width="25%">
+                        <div><center><img src="https://chart.googleapis.com/chart?chs=100x100&cht=qr&chl=<?php echo base_url();?>print_books/books/<?php echo $book_no;?>&choe=UTF-8" title="<?php echo $stsyem_library_name." : ".$book_no;?>"></center></div>
+                        <div><center><?php echo  $Barcode_generator->getBarcode($book_no,$Barcode_generator::TYPE_CODE_128,2,40);?></center></div>
+                        <div><center><small><?php echo $stsyem_library_name." : ".$book_no;?></small></center></div>
+                    </td>
+                    <td width="25%">
+                        <div>&nbsp;</div>
+                        <div>&nbsp;</div>
+                        <div>&nbsp;</div>
+                    </td>         
+                    <td width="25%">
+                        <div>&nbsp;</div>
+                        <div>&nbsp;</div>
+                        <div>&nbsp;</div>
+                    </td>           
+    <?php   } ?>
+
+<!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+            <?php    }else{ ?>
+<!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+
+    <?php
+            if(($PLBCount%4==0)){ ?>
                 </tr>
                 <tr>
                     <td width="25%">
@@ -310,13 +396,16 @@
                         <div><center><?php echo  $Barcode_generator->getBarcode($book_no,$Barcode_generator::TYPE_CODE_128,2,40);?></center></div>
                         <div><center><small><?php echo $stsyem_library_name." : ".$book_no;?></small></center></div>
                     </td>
-                <?php   }else{  ?>
+    <?php   }else{  ?>
                     <td width="25%">
-                        <div><center><img  src="https://chart.googleapis.com/chart?chs=100x100&cht=qr&chl=<?php echo base_url();?>print_books/books/<?php echo $book_no;?>&choe=UTF-8" title="<?php echo $stsyem_library_name." : ".$book_no;?>"></center></div>
+                        <div><center><img src="https://chart.googleapis.com/chart?chs=100x100&cht=qr&chl=<?php echo base_url();?>print_books/books/<?php echo $book_no;?>&choe=UTF-8" title="<?php echo $stsyem_library_name." : ".$book_no;?>"></center></div>
                         <div><center><?php echo  $Barcode_generator->getBarcode($book_no,$Barcode_generator::TYPE_CODE_128,2,40);?></center></div>
                         <div><center><small><?php echo $stsyem_library_name." : ".$book_no;?></small></center></div>
                     </td>
-                <?php   } ?>
+    <?php   } ?>
+
+<!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+            <?php    }?>
 <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
     <?php   }  ?>
 
