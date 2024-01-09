@@ -1,13 +1,13 @@
-<!--
-	Develop By Kunlathon Saowakhon
-	พัฒนาเว็บไซต์โดย นายกุลธร เสาวคนธ์
-	Tel 093-267-0639
-	โทร 093-267-0639
-	Email: mpamese.pc2001@gmail.com	
--->	
-	<div class="navbar navbar-inverse">
+<?php
+	//Develop By Kunlathon Saowakhon
+	//พัฒนาเว็บระบบโดย นายกุลธร เสาวคนธ์
+	//Tel 0932670639
+	//โทร 0932670639
+	//Email: mpamese.pc2001@gmail.com , missing_yrc2014@hotmail.com	
+?>
+	<div class="navbar navbar-inverse" style="background-color: #0066ca;">
 		<div class="navbar-header">
-			<a class="navbar-brand" href="index.html"><img src="<?php echo base_url();?>/public/theme/Template/global_assets/images/logo_light.png" alt=""></a>
+			<a  href="<?php echo base_url();?>admin"><img src="<?php echo base_url();?>public/img_login/regina.png" class="img-rounded" style="width: 100px;"></a>
 
 			<ul class="nav navbar-nav pull-right visible-xs-block">
 				<li><a data-toggle="collapse" data-target="#navbar-mobile"><i class="icon-tree5"></i></a></li>

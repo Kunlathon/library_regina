@@ -1,6 +1,6 @@
 <!-- Forms - Select2 Selects-->
-<script src="<?php echo base_url();?>/public/theme/Template/global_assets/js/core/libraries/jquery_ui/interactions.min.js"></script>
-<script src="<?php echo base_url();?>/public/theme/Template/global_assets/js/plugins/forms/selects/select2.min.js"></script>
+<script src="<?php echo base_url();?>public/theme/Template/global_assets/js/core/libraries/jquery_ui/interactions.min.js"></script>
+<script src="<?php echo base_url();?>public/theme/Template/global_assets/js/plugins/forms/selects/select2.min.js"></script>
 
 <script>
     $(document).ready(function(){

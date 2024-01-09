@@ -3,7 +3,7 @@
 	//การจัดการทศนิยมดิวอี้หมวดใหญ่
 	class ManagementDDCA{
 		public $MDDCA_Id,$MDDCA_TxtTh,$MDDCA_TxtEn,$MDDCA_Type;
-		public $MDDCATxt,$MDDCA;
+		public $MDDCATxt,$MDDCA,$MDDCB;
 		function __construct($MDDCA_Id,$MDDCA_TxtTh,$MDDCA_TxtEn,$MDDCA_Type){
 			$this->MDDCA_Id=$MDDCA_Id;
 			$this->MDDCA_TxtTh=$MDDCA_TxtTh;
@@ -645,6 +645,7 @@ $MLTType="-";
 	//การจัดการข้อมูลสถานะหนังสือ
 	class ManagementStatus{
 		public $MS_Key,$MS_TxtTh,$MS_TxtEh,$MS_Type;
+		public $MSStatus,$MSStatusTxt;
 		function __construct($MS_Key,$MS_TxtTh,$MS_TxtEh,$MS_Type){
 			$this->MS_Key=$MS_Key;
 			$this->MS_TxtTh=$MS_TxtTh;

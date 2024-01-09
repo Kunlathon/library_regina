@@ -1,3 +1,10 @@
+<!--
+    Develop By Kunlathon Saowakhon
+    พัฒนาเว็บไซต์โดย นายกุลธร เสาวคนธ์
+    Tel 0932670639
+    โทร 0932670639
+    Email: mpamese.pc2001@gmail.com , missing_yrc2014@hotmail.com	
+-->
 <meta charset="utf-8">
 <?php
 	$session=session();
@@ -38,7 +45,7 @@
     ?>
 
             <select class="select-menu-color" name="user_books" id="user_books">
-                    <option value=""></option>               
+               
                 <optgroup label="รายชื่อสมาชิกห้องสมุด">
                     
 

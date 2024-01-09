@@ -1,7 +1,7 @@
 <?php
     header('Content-Type: text/html; charset=UTF-8');
     $session=session();
-    $InputCBK=\Config\Services::request();
+    $InputCBC=\Config\Services::request();
     if(($session->has("IL_Key")>=1)){
         if(($_SESSION["IL_Status"]==1)){
             include(APPPATH."Database-pdo/pdo_library.php");	
@@ -10,7 +10,7 @@
 //----------------------------------------------------------------------------------------------------------
             include("public/add-ons/php-barcode-generator-master/src/BarcodeGenerator.php");
             include("public/add-ons/php-barcode-generator-master/src/BarcodeGeneratorHTML.php");
-            //$InputCBK=$InputDCA->getPost('xxxx'); ?>
+            //$InputCBC=$InputCBC->getPost('xxxx'); ?>
 <!--________________________________________________________________________________-->
 <!DOCTYPE html>
     <html lang="en">
@@ -148,7 +148,7 @@
 
                 <table width="100%" border="0" cellspacing="0" cellpadding="0">
                     <tr>
-                        <td><div>สำเนา 1 <?php echo "BookKey : ".$books." (".$stsyem_library_name.")";?></div></td>
+                        <td><div>สำเนา 1 จัดพิมพ์ แบบกำหนดเอง</div></td>
                     </tr>
                 </table>
             
@@ -159,21 +159,24 @@
         $BL_Key=$books;
             if((isset($BL_Key))){
                 $PLBCount=0;
-                $PrintListbooks=new MD_Library_Listbooks("RowArray",$BL_Key,"-","-","-","-");
-                foreach($PrintListbooks->CallArrayMDLL() as $rc_book=>$PrintListbooksRow){ 
-                $Listbooks_Status=$PrintListbooksRow["Li_StatusNo"];
+                $PrintListbooks=$InputCBC->getPost('count_fcq'); 
+                
+                while($PLBCount<$PrintListbooks){
+                //foreach($PrintListbooks->CallArrayMDLL() as $rc_book=>$PrintListbooksRow){ 
+                //$Listbooks_Status=$PrintListbooksRow["Li_StatusNo"];
 //------------------------------------------------------------------------------------------	
-                    $book_no=$PrintListbooksRow["LLB_Key"];	
-                    $DataAdder=new ManagementAdder($PrintListbooksRow["LAd_No"],"-","read_txt");
-                    $DataStatus=new ManagementStatus($PrintListbooksRow["Li_StatusNo"],"-","-","read_txt"); 
+                    //$book_no=$_POST["create_qr"][$PLBCount];
+                      $book_no=$InputCBC->getPost('create_qr')[$PLBCount];
+                    //$DataAdder=new ManagementAdder($PrintListbooksRow["LAd_No"],"-","read_txt");
+                    //$DataStatus=new ManagementStatus($PrintListbooksRow["Li_StatusNo"],"-","-","read_txt"); 
 //------------------------------------------------------------------------------------------
                     $Barcode_generator=new Picqer\Barcode\BarcodeGeneratorHTML();
 //------------------------------------------------------------------------------------------
             ?>
 <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
     <?php
-        $Count_Books=new Int_Library_Books("count",$BL_Key);
-            if(($Count_Books->CallCountBooks()==1)){ ?>
+        $Count_Books=$PrintListbooks;
+            if(($Count_Books==1)){ ?>
 <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
             <tr>
                 <td width="25%">
@@ -202,7 +205,7 @@
 <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
 
             <?php
-                if(($Count_Books->CallCountBooks()==2)){ ?>
+                if(($Count_Books==2)){ ?>
 <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
 
 <?php
@@ -277,8 +280,7 @@
 
 <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
 <?php	
-            $PLBCount=$PLBCount+1;
-                } ?>		
+            $PLBCount=$PLBCount+1; } ?>		
               
     <?php   }else{} ?>      
 
@@ -296,7 +298,7 @@
 
                 <table width="100%" border="0" cellspacing="0" cellpadding="0">
                     <tr>
-                        <td><div>สำเนา 2 <?php echo "BookKey : ".$books." (".$stsyem_library_name.")";?></div></td>
+                        <td><div>สำเนา 2 จัดพิมพ์ แบบกำหนดเอง</div></td>
                     </tr>
                 </table>
 
@@ -307,13 +309,14 @@
                     $BL_Key=$books;
                         if((isset($BL_Key))){
                             $PLBCount=0;
-                            $PrintListbooks=new MD_Library_Listbooks("RowArray",$BL_Key,"-","-","-","-");
-                            foreach($PrintListbooks->CallArrayMDLL() as $rc_book=>$PrintListbooksRow){ 
-                                $Listbooks_Status=$PrintListbooksRow["Li_StatusNo"];
+                            $PrintListbooks=$InputCBC->getPost('count_fcq'); 
+                            while($PLBCount<$PrintListbooks){
+                                //foreach($PrintListbooks->CallArrayMDLL() as $rc_book=>$PrintListbooksRow){ 
+                                //$Listbooks_Status=$PrintListbooksRow["Li_StatusNo"];
 //------------------------------------------------------------------------------------------	
-                                $book_no=$PrintListbooksRow["LLB_Key"];	
-                                $DataAdder=new ManagementAdder($PrintListbooksRow["LAd_No"],"-","read_txt");
-                                $DataStatus=new ManagementStatus($PrintListbooksRow["Li_StatusNo"],"-","-","read_txt"); 
+                                  $book_no=$InputCBC->getPost('create_qr')[$PLBCount];
+                                //$DataAdder=new ManagementAdder($PrintListbooksRow["LAd_No"],"-","read_txt");
+                                //$DataStatus=new ManagementStatus($PrintListbooksRow["Li_StatusNo"],"-","-","read_txt"); 
 //------------------------------------------------------------------------------------------
                                 $Barcode_generator=new Picqer\Barcode\BarcodeGeneratorHTML();
 //------------------------------------------------------------------------------------------
@@ -321,8 +324,8 @@
                 <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
 
     <?php
-        $Count_Books=new Int_Library_Books("count",$BL_Key);
-            if(($Count_Books->CallCountBooks()==1)){ ?>
+        $Count_Books=$PrintListbooks;
+            if(($Count_Books==1)){ ?>
 <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
             <tr>
                 <td width="25%">
@@ -350,7 +353,7 @@
     <?php   }else{ ?>
 <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
 <?php
-                if(($Count_Books->CallCountBooks()==2)){ ?>
+                if(($Count_Books==2)){ ?>
 <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
 
 <?php

@@ -16,19 +16,19 @@
 	<title>MIS Regina Library</title>
 
 <!-- Global stylesheets -->
-	<link href="<?php echo base_url();?>/public/theme/Template/global_assets/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
-	<link href="<?php echo base_url();?>/public/theme/Template/layout_4/LTR/default/full/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-	<link href="<?php echo base_url();?>/public/theme/Template/layout_4/LTR/default/full/assets/css/core.min.css" rel="stylesheet" type="text/css">
-	<link href="<?php echo base_url();?>/public/theme/Template/layout_4/LTR/default/full/assets/css/components.min.css" rel="stylesheet" type="text/css">
-	<link href="<?php echo base_url();?>/public/theme/Template/layout_4/LTR/default/full/assets/css/colors.min.css" rel="stylesheet" type="text/css">
+	<link href="<?php echo base_url();?>public/theme/Template/global_assets/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
+	<link href="<?php echo base_url();?>public/theme/Template/layout_4/LTR/default/full/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="<?php echo base_url();?>public/theme/Template/layout_4/LTR/default/full/assets/css/core.min.css" rel="stylesheet" type="text/css">
+	<link href="<?php echo base_url();?>public/theme/Template/layout_4/LTR/default/full/assets/css/components.min.css" rel="stylesheet" type="text/css">
+	<link href="<?php echo base_url();?>public/theme/Template/layout_4/LTR/default/full/assets/css/colors.min.css" rel="stylesheet" type="text/css">
 <!-- /global stylesheets -->
 	<style>
 		@font-face {
 			font-family: 'surafont_sanukchang';
-			src: url('<?php echo base_url();?>/public/font/surafont_sanukchang-webfont.eot');
-			src: url('<?php echo base_url();?>/public/font/surafont_sanukchang-webfont.eot?#iefix') format('embedded-opentype'),
-			url('<?php echo base_url();?>/public/font/surafont_sanukchang-webfont.woff') format('woff'),
-			url('<?php echo base_url();?>/public/font/surafont_sanukchang.ttf') format('truetype');
+			src: url('<?php echo base_url();?>public/font/surafont_sanukchang-webfont.eot');
+			src: url('<?php echo base_url();?>public/font/surafont_sanukchang-webfont.eot?#iefix') format('embedded-opentype'),
+			url('<?php echo base_url();?>public/font/surafont_sanukchang-webfont.woff') format('woff'),
+			url('<?php echo base_url();?>public/font/surafont_sanukchang.ttf') format('truetype');
 		}
 		
 		body{
@@ -39,12 +39,12 @@
 		}
 	</style>
 <!-- Core JS files -->
-	<script src="<?php echo base_url();?>/public/theme/Template/global_assets/js/plugins/loaders/pace.min.js"></script>
-	<script src="<?php echo base_url();?>/public/theme/Template/global_assets/js/core/libraries/jquery.min.js"></script>
-	<script src="<?php echo base_url();?>/public/theme/Template/global_assets/js/core/libraries/bootstrap.min.js"></script>
-	<script src="<?php echo base_url();?>/public/theme/Template/global_assets/js/plugins/loaders/blockui.min.js"></script>
-	<script src="<?php echo base_url();?>/public/theme/Template/global_assets/js/plugins/ui/nicescroll.min.js"></script>
-	<script src="<?php echo base_url();?>/public/theme/Template/global_assets/js/plugins/ui/drilldown.js"></script>
+	<script src="<?php echo base_url();?>public/theme/Template/global_assets/js/plugins/loaders/pace.min.js"></script>
+	<script src="<?php echo base_url();?>public/theme/Template/global_assets/js/core/libraries/jquery.min.js"></script>
+	<script src="<?php echo base_url();?>public/theme/Template/global_assets/js/core/libraries/bootstrap.min.js"></script>
+	<script src="<?php echo base_url();?>public/theme/Template/global_assets/js/plugins/loaders/blockui.min.js"></script>
+	<script src="<?php echo base_url();?>public/theme/Template/global_assets/js/plugins/ui/nicescroll.min.js"></script>
+	<script src="<?php echo base_url();?>public/theme/Template/global_assets/js/plugins/ui/drilldown.js"></script>
 <!-- /core JS files -->
 	<?php
 		$Copy_Library_Mod=strtolower($library_mod);
@@ -80,19 +80,23 @@
 				include("public/admin_mod/js/borrow_book/borrow_book_js.php");
 			}elseif(($Copy_Library_Mod=="return_book")){
 				include("public/admin_mod/js/return_book/return_book_js.php");
+			}elseif(($Copy_Library_Mod=="data_library")){
+				include("public/admin_mod/js/data_library/data_library_js.php");
+			}elseif(($Copy_Library_Mod=="create_qrcode")){
+				include("public/admin_mod/js/create_qrcode/create_qrcode_js.php");
 			}else{ ?>
 <!-- Theme JS files -->
-	<script src="<?php echo base_url();?>/public/theme/Template/global_assets/js/plugins/visualization/d3/d3.min.js"></script>
-	<script src="<?php echo base_url();?>/public/theme/Template/global_assets/js/plugins/visualization/d3/d3_tooltip.js"></script>
-	<script src="<?php echo base_url();?>/public/theme/Template/global_assets/js/plugins/forms/styling/switchery.min.js"></script>
-	<script src="<?php echo base_url();?>/public/theme/Template/global_assets/js/plugins/forms/selects/bootstrap_multiselect.js"></script>
-	<script src="<?php echo base_url();?>/public/theme/Template/global_assets/js/plugins/ui/moment/moment.min.js"></script>
-	<script src="<?php echo base_url();?>/public/theme/Template/global_assets/js/plugins/pickers/daterangepicker.js"></script>
+	<script src="<?php echo base_url();?>public/theme/Template/global_assets/js/plugins/visualization/d3/d3.min.js"></script>
+	<script src="<?php echo base_url();?>public/theme/Template/global_assets/js/plugins/visualization/d3/d3_tooltip.js"></script>
+	<script src="<?php echo base_url();?>public/theme/Template/global_assets/js/plugins/forms/styling/switchery.min.js"></script>
+	<script src="<?php echo base_url();?>public/theme/Template/global_assets/js/plugins/forms/selects/bootstrap_multiselect.js"></script>
+	<script src="<?php echo base_url();?>public/theme/Template/global_assets/js/plugins/ui/moment/moment.min.js"></script>
+	<script src="<?php echo base_url();?>public/theme/Template/global_assets/js/plugins/pickers/daterangepicker.js"></script>
 
-	<script src="<?php echo base_url();?>/public/theme/Template/global_assets/js/demo_pages/dashboard.js"></script>
+	<script src="<?php echo base_url();?>public/theme/Template/global_assets/js/demo_pages/dashboard.js"></script>
 <!-- /theme JS files -->			
 	<?php	} ?>
-	<script src="<?php echo base_url();?>/public/theme/Template/layout_4/LTR/default/full/assets/js/app.js"></script>
+	<script src="<?php echo base_url();?>public/theme/Template/layout_4/LTR/default/full/assets/js/app.js"></script>
 
 <!--****************************************************************************-->
     <script type="text/javascript">

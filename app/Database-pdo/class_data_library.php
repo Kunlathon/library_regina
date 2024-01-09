@@ -19,9 +19,9 @@
 										WHERE 1 ORDER BY `Li_StatusNo` ASC";
 							if($BookStatusRs=$CountLibrary->query($BookStatusSql)){
 								while($BookStatusRow=$BookStatusRs->Fetch(PDO::FETCH_ASSOC)){
-									if(is_array($$BookStatusRow) && count($BookStatusRow)){
+									if(is_array($BookStatusRow) && count($BookStatusRow)){
 										$BS_Error="NoError";
-										$BS_Array[]=$$BookStatusRow;
+										$BS_Array[]=$BookStatusRow;
 									}else{
 										$BS_Error="Error";
 										$BS_Array[]="-";
@@ -42,9 +42,9 @@
 										WHERE `Li_StatusNo`='{$this->BS_Id}';";
 							if($BookStatusRs=$CountLibrary->query($BookStatusSql)){
 								$BookStatusRow=$BookStatusRs->Fetch(PDO::FETCH_ASSOC);
-									if(is_array($$BookStatusRow) && count($BookStatusRow)){
+									if(is_array($BookStatusRow) && count($BookStatusRow)){
 										$BS_Error="NoError";
-										$BS_Array[]=$$BookStatusRow;
+										$BS_Array[]=$BookStatusRow;
 									}else{
 										$BS_Error="Error";
 										$BS_Array[]="-";
@@ -367,9 +367,31 @@
 							$ArrayMDLL[]="-";
 						}
 					break;
+					case "RowAll":
+						try{
+							$LibraryListbooksSql="SELECT * FROM `library_books`";
+								if($LibraryListbooksRs=$CountLibrary->query($LibraryListbooksSql)){
+									while($LibraryListbooksRow=$LibraryListbooksRs->Fetch(PDO::FETCH_ASSOC)){
+										if(is_array($LibraryListbooksRow) && count($LibraryListbooksRow)){
+											$ErrorMDLL="NotError";
+											$ArrayMDLL[]=$LibraryListbooksRow;
+										}else{
+											$ErrorMDLL="Error";
+											$ArrayMDLL[]="-";
+										}
+									}
+								}else{
+									$ErrorMDLL="Error";
+									$ArrayMDLL[]="-";
+								}
+						}catch(PDOException $e){
+							$ErrorMDLL="Error";
+							$ArrayMDLL[]="-";
+						}
+					break;
 					default:
 						$ErrorMDLL="Error";
-						$Arrayc[]="-";
+						$ArrayMDLL[]="-";
 				}
 				
 				if(isset($ErrorMDLL)){
