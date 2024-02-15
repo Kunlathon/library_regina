@@ -31,7 +31,12 @@
 		<div class="content-wrapper">
 
 	<?php
-		@$manage=filter_input(INPUT_POST,'manage');
+		if((isset($_POST["manage"]))){
+			$manage=filter_input(INPUT_POST,'manage');
+		}else{
+			$mange=null;
+		}
+
 			if(($manage=="form_add")){ ?>
 
 	<div class="row">

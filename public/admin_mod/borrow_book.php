@@ -120,7 +120,7 @@
                 if(($test_borrow_error!=0)){ ?>
 <!---------------------------------------------------------------->
 	<div class="row">
-        <div class="col-sm-12 col-md-12 col-lg-12">
+        <div class="col-<?php echo $grid;?>-12">
             <div class="content-group-lg">
                 <div class="alert alert-danger alert-styled-left">
                     <div style="font: 20px">ไม่สามารถดำเนินการยืมได้ เนื่องจากหนังสือได้ถูกยืมไปแล้ว</div>
@@ -129,7 +129,7 @@
         </div>
     </div>
 	<div class="row">
-		<div class="col-sm-12 col-md-12 col-lg-12">
+		<div class="col-<?php echo $grid;?>-12">
 			<button type="button" onclick="location.href='<?php echo base_url();?>/admin?library_mod=borrow_book';" class="btn btn-success">กลับไปที่หน้ายืมหนังสือ</button>
 		</div>
 	</div>	
@@ -171,7 +171,7 @@
                         } ?>
 <!---------------------------------------------------------------->
     <div class="row">
-        <div class="col-sm-12 col-md-12 col-lg-12">
+        <div class="col-<?php echo $grid;?>-12">
             <div class="content-group-lg">
                 <div class="alert alert-success alert-styled-left">
                     <div style="font: 20px">ดำเนินการยืมหนังสือสำเร็จ</div>
@@ -180,20 +180,20 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-sm-12 col-md-12 col-lg-12">
+        <div class="col-<?php echo $grid;?>-12">
             <div class="panel panel-info">
                 <div class="panel-heading"></div>
                 <div class="panel-body">
                     <div class="row">
-                        <div class="col-sm-3 col-md-3 col-lg-3">จำนวนหนังสือที่ยืม </div>
+                        <div class="col-<?php echo $grid;?>-3">จำนวนหนังสือที่ยืม </div>
                         <div class="col-sm-10 col-md-10 col-lg-10"><?php echo $borrow_count;?></div>
                     </div>
                     <div class="row">
-                        <div class="col-sm-3 col-md-3 col-lg-3">วันที่ยืม </div>
+                        <div class="col-<?php echo $grid;?>-3">วันที่ยืม </div>
                         <div class="col-sm-10 col-md-10 col-lg-10"><?php echo  date("d-m-Y",strtotime($books_date));?></div>
                     </div>
                     <div class="row">
-                        <div class="col-sm-3 col-md-3 col-lg-3">วันที่กำหนดส่งคืน (ยืมได้ระยะเวลา <?php echo $set_time.")";?></div>
+                        <div class="col-<?php echo $grid;?>-3">วันที่กำหนดส่งคืน (ยืมได้ระยะเวลา <?php echo $set_time.")";?></div>
                         <div class="col-sm-10 col-md-10 col-lg-10"><?php echo  date("d-m-Y",strtotime("+$set_time days",strtotime($books_date)));?></div>
                     </div>                     
                 </div>
@@ -201,7 +201,7 @@
         </div>
     </div>  
 	<div class="row">
-		<div class="col-sm-12 col-md-12 col-lg-12">
+		<div class="col-<?php echo $grid;?>-12">
 			<button type="button" onclick="location.href='<?php echo base_url();?>/admin?library_mod=borrow_book';" class="btn btn-success">กลับไปที่หน้ายืมหนังสือ</button>
 		</div>
 	</div>	
@@ -214,7 +214,7 @@
             }else{ ?>
 <!---------------------------------------------------------------->
     <div class="row">
-        <div class="col-sm-12 col-md-12 col-lg-12">
+        <div class="col-<?php echo $grid;?>-12">
             <div class="content-group-lg">
                 <div class="alert alert-danger alert-styled-left">
                     <div style="font: 20px">ไม่พบรายหนังสือที่ต้องการยืม</div>
@@ -223,7 +223,7 @@
         </div>
     </div>
 	<div class="row">
-		<div class="col-sm-12 col-md-12 col-lg-12">
+		<div class="col-<?php echo $grid;?>-12">
 			<button type="button" onclick="location.href='<?php echo base_url();?>/admin?library_mod=borrow_book';" class="btn btn-success">กลับไปที่หน้ายืมหนังสือ</button>
 		</div>
 	</div>
@@ -236,14 +236,14 @@
         <?php       }else{ ?>
 <!---------------------------------------------------------------->
             <div class="row">
-                <div class="col-sm-12 col-md-12 col-lg-12">
+                <div class="col-<?php echo $grid;?>-12">
                     <div class="panel panel-body border-top-primary">
                         <div class="row">
-                            <div class="col-sm-8 col-md-8 col-lg-8">
+                            <div class="col-<?php echo $grid;?>-8">
                                 <fieldset class="content-group">
 								    <div class="form-group">
-									    <label class="control-label col-sm-3 col-md-3 col-lg-3">รายชื่อสมาชิกห้องสมุด</label>
-									    <div class="col-sm-9 col-md-9 col-lg-9">
+									    <label class="control-label col-<?php echo $grid;?>-3">รายชื่อสมาชิกห้องสมุด</label>
+									    <div class="col-<?php echo $grid;?>-9">
                                             <select class="select-menu-color" name="user_books" id="user_books">
                                                 <optgroup label="รายชื่อสมาชิกห้องสมุด">
                                                     <option value="">กำลังโหลดรายชื่อสมาชิกห้องสมุด...</option>
@@ -253,7 +253,7 @@
 								    </div>
                                 </fieldset>
                             </div>
-                            <div class="col-sm-3 col-md-3 col-lg-3">
+                            <div class="col-<?php echo $grid;?>-3">
                                 <fieldset class="content-group">
                                     <div class="form-group">
                                         <button type="button" id="but_enter" class="btn btn-success">เรียกชื่อ</button>
@@ -272,14 +272,14 @@
             }else{ ?>
 <!---------------------------------------------------------------->
             <div class="row">
-                <div class="col-sm-12 col-md-12 col-lg-12">
+                <div class="col-<?php echo $grid;?>-12">
                     <div class="panel panel-body border-top-primary">
                         <div class="row">
-                            <div class="col-sm-8 col-md-8 col-lg-8">
+                            <div class="col-<?php echo $grid;?>-8">
                                 <fieldset class="content-group">
 								    <div class="form-group">
-									    <label class="control-label col-sm-3 col-md-3 col-lg-3">รายชื่อสมาชิกห้องสมุด</label>
-									    <div class="col-sm-9 col-md-9 col-lg-9">
+									    <label class="control-label col-<?php echo $grid;?>-3">รายชื่อสมาชิกห้องสมุด</label>
+									    <div class="col-<?php echo $grid;?>-9">
                                             <select class="select-menu-color" name="user_books" id="user_books">
                                                 <optgroup label="รายชื่อสมาชิกห้องสมุด">
                                                     <option value="">กำลังโหลดรายชื่อสมาชิกห้องสมุด...</option>
@@ -289,7 +289,7 @@
 								    </div>
                                 </fieldset>
                             </div>
-                            <div class="col-sm-3 col-md-3 col-lg-3">
+                            <div class="col-<?php echo $grid;?>-3">
                                 <fieldset class="content-group">
                                     <div class="form-group">
                                         <button type="button" id="but_enter" class="btn btn-success">เรียกชื่อ</button>

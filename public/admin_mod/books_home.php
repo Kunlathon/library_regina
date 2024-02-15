@@ -1,10 +1,10 @@
 	<div class="page-header">
 		<div class="page-header-content">
 			<div class="page-title">
-				<h4>
+				<forn style="font-family: surafont_sanukchang ; font-size: 16px; font-weight: bold;">
 					<span class="text-semibold">หน้าแรก</span>&nbsp;-&nbsp;Welcome&nbsp;to&nbsp;MIS&nbsp;Regina&nbsp;Library
 					<small class="display-block">Management&nbsp;Information&nbsp;System&nbsp;Regina&nbsp;Library</small>
-				</h4>
+</forn>
 			</div>
 
 			<!--<div class="heading-elements">
@@ -19,167 +19,101 @@
 	
 	<div class="page-container">
 		<div class="page-content">
-			<div class="content-wrapper">
-				<div class="row">
-					<div class="col-sm-12 col-md-12 col-lg-12">
-						<div class="panel panel-body border-top-primary">
-							<div class="row">
-								<div class="col-sm-12 col-md-12 col-lg-12">
-									<h3 class="no-margin text-semibold">ข้อมูลพื้นฐานห้องสมุด</h3>
-								</div>
-							</div><hr>
-							<div class="row">
-								<div class="col-sm-3 col-md-3 col-lg-3">
-									<div class="panel panel-body">
-										<div class="media no-margin">
-											<div class="media-body">
-												<h4 class="no-margin text-semibold">ผู้แต่ง</h4>
-											</div>
-											<div class="media-right media-middle">
-												<i class="icon-bubbles4 icon-3x text-blue-400"></i>
-											</div>
-										</div>
-									</div>									
-								</div>
-								<div class="col-sm-3 col-md-3 col-lg-3">
-									<div class="panel panel-body">
-										<div class="media no-margin">
-											<div class="media-body">
-												<h4 class="no-margin text-semibold">ประเภทหนังสือ</h4>
-											</div>
-											<div class="media-right media-middle">
-												<i class="icon-bubbles4 icon-3x text-blue-400"></i>
-											</div>
-										</div>
-									</div>									
-								</div>
-								<div class="col-sm-3 col-md-3 col-lg-3">
-									<div class="panel panel-body">
-										<div class="media no-margin">
-											<div class="media-body">
-												<h4 class="no-margin text-semibold">บรรณาธิการ</h4>
-											</div>
-											<div class="media-right media-middle">
-												<i class="icon-bubbles4 icon-3x text-blue-400"></i>
-											</div>
-										</div>
-									</div>									
-								</div>
-								<div class="col-sm-3 col-md-3 col-lg-3">
-									<div class="panel panel-body">
-										<div class="media no-margin">
-											<div class="media-body">
-												<h4 class="no-margin text-semibold">ผู้แปล</h4>
 
-											</div>
-											<div class="media-right media-middle">
-												<i class="icon-bubbles4 icon-3x text-blue-400"></i>
-											</div>
-										</div>
-									</div>									
-								</div>
-							</div>
+			<fieldset class="content-group">
+				<div class="row">
+					<div class="col-<?php echo $grid;?>-6">
+						<div class="panel panel-body border-top-primary">
 							
-							<div class="row">
-								<div class="col-sm-3 col-md-3 col-lg-3">
-									<div class="panel panel-body">
-										<div class="media no-margin">
-											<div class="media-body">
-												<h4 class="no-margin text-semibold">ที่เก็บหนังสือ</h4>
-
-											</div>
-											<div class="media-right media-middle">
-												<i class="icon-bubbles4 icon-3x text-blue-400"></i>
-											</div>
-										</div>
-									</div>									
+							<fieldset class="content-group">
+								<div class="row">
+									<div class="col-<?php echo $grid;?>-12">
+										<div style="font-family: surafont_sanukchang ; font-size: 16px; font-weight: bold;" class="no-margin text-semibold">ข้อมูลพื้นฐานห้องสมุด</div>
+									</div>
 								</div>
-						
+							</fieldset>
 
-								<div class="col-sm-3 col-md-3 col-lg-3">
-									<div class="panel panel-body">
-										<div class="media no-margin">
-											<div class="media-body">
-												<h4 class="no-margin text-semibold">หมวดหมู่ระบบทศนิยมดิวอี้</h4>
+							<fieldset class="content-group">
+								<div class="row">
+									<div class="col-<?php echo $grid;?>-12">
+										<button type="button" class="btn btn-default btn-float btn-float-lg content-group" onClick="location.href='<?php echo base_url();?>admin?library_mod=author'"><i class="icon-database-add"></i> <span>ผู้แต่ง</span></button>
+										<button type="button" class="btn btn-default btn-float btn-float-lg content-group" onClick="location.href='<?php echo base_url();?>admin?library_mod=type'"><i class="icon-database-add"></i> <span>ประเภทหนังสือ</span></button>
+										<button type="button" class="btn btn-default btn-float btn-float-lg content-group" onClick="location.href='<?php echo base_url();?>admin?library_mod=editor'"><i class="icon-database-add"></i> <span>ข้อมูลบรรณาธิการ</span></button>
+										<button type="button" class="btn btn-default btn-float btn-float-lg content-group" onClick="location.href='<?php echo base_url();?>admin?library_mod=translator'"><i class="icon-database-add"></i> <span>ผู้แปล</span></button>
+										<button type="button" class="btn btn-default btn-float btn-float-lg content-group" onClick="location.href='<?php echo base_url();?>admin?library_mod=publisher'"><i class="icon-database-add"></i> <span>สำนักพิมพ์</span></button>
+										<button type="button" class="btn btn-default btn-float btn-float-lg content-group" onClick="location.href='<?php echo base_url();?>admin?library_mod=keep'"><i class="icon-database-add"></i> <span>ที่เก็บหนังสือ</span></button>
+										<button type="button" class="btn btn-default btn-float btn-float-lg content-group" onClick="location.href='<?php echo base_url();?>admin?library_mod=ddc'"><i class="icon-database-refresh"></i> <span>DDC</span></button>
 
-											</div>
-											<div class="media-right media-middle">
-												<i class="icon-bubbles4 icon-3x text-blue-400"></i>
-											</div>
-										</div>
-									</div>									
+									</div>
+
+									
+
 								</div>
-
-							</div>							
+							</fieldset>
 
 						</div>
-					</div>
-				</div>
 
-				<div class="row">
-					<div class="col-sm-12 col-md-12 col-lg-12">
+
+
+					</div>
+					<div class="col-<?php echo $grid;?>-6">
 						<div class="panel panel-body border-top-primary">
-							<div class="row">
-								<div class="col-sm-12 col-md-12 col-lg-12">
-									<h3 class="no-margin text-semibold">ข้อมูลพื้นฐานหนังสือ</h3>
-								</div>
-							</div><hr>
-							<div class="row">
-								<div class="col-sm-3 col-md-3 col-lg-3">
-									<div class="panel panel-body">
-										<div class="media no-margin">
-											<div class="media-body">
-												<h4 class="no-margin text-semibold">ลงทะเบียนหนังสือ</h4>
-											</div>
-											<div class="media-right media-middle">
-												<i class="icon-bubbles4 icon-3x text-blue-400"></i>
-											</div>
-										</div>
-									</div>									
-								</div>
-								<div class="col-sm-3 col-md-3 col-lg-3">
-									<div class="panel panel-body">
-										<div class="media no-margin">
-											<div class="media-body">
-												<h4 class="no-margin text-semibold">เพิ่มหนังสือเข้าห้องสมุด</h4>
-											</div>
-											<div class="media-right media-middle">
-												<i class="icon-bubbles4 icon-3x text-blue-400"></i>
-											</div>
-										</div>
-									</div>									
-								</div>
-								<div class="col-sm-3 col-md-3 col-lg-3">
-									<div class="panel panel-body">
-										<div class="media no-margin">
-											<div class="media-body">
-												<h4 class="no-margin text-semibold">การจัดการเลขทะเบียนหนังสือ</h4>
-											</div>
-											<div class="media-right media-middle">
-												<i class="icon-bubbles4 icon-3x text-blue-400"></i>
-											</div>
-										</div>
-									</div>									
-								</div>
-								<div class="col-sm-3 col-md-3 col-lg-3">
-									<div class="panel panel-body">
-										<div class="media no-margin">
-											<div class="media-body">
-												<h4 class="no-margin text-semibold">รายงานข้อมูลหนังสือ</h4>
-											</div>
-											<div class="media-right media-middle">
-												<i class="icon-bubbles4 icon-3x text-blue-400"></i>
-											</div>
-										</div>
-									</div>									
-								</div>
-							</div>
 
-						</div>
+							<fieldset class="content-group">
+								<div class="row">
+									<div class="col-<?php echo $grid;?>-12">
+										<div style="font-family: surafont_sanukchang ; font-size: 16px; font-weight: bold;" class="no-margin text-semibold">ข้อมูลพื้นฐานหนังสือ</div>
+									</div>
+								</div>
+							</fieldset>
+
+							<fieldset class="content-group">
+								<div class="row">
+									<div class="col-<?php echo $grid;?>-12">
+										<button type="button" class="btn btn-default btn-float btn-float-lg content-group" onClick="location.href='<?php echo base_url();?>admin?library_mod=books_register'"><i class="icon-folder-upload"></i> <span>ลงทะเบียนหนังสือ</span></button>
+										<button type="button" class="btn btn-default btn-float btn-float-lg content-group" onClick="location.href='<?php echo base_url();?>admin?library_mod=books_library'"><i class="icon-folder-plus2"></i> <span>เพิ่มหนังสือเข้าห้องสมุด</span></button>
+										<button type="button" class="btn btn-default btn-float btn-float-lg content-group" onClick="location.href='<?php echo base_url();?>admin?library_mod=books_registration'"><i class="icon-pencil4"></i> <span>การจัดการเลขทะเบียนหนังสือ</span></button>
+										<button type="button" class="btn btn-default btn-float btn-float-lg content-group" onClick="location.href='<?php echo base_url();?>admin?library_mod=report_library'"><i class="icon-pencil4"></i> <span>การจัดการเลขทะเบียนหนังสือ</span></button>
+										<button type="button" class="btn btn-default btn-float btn-float-lg content-group" onClick="location.href='<?php echo base_url();?>admin?library_mod=data_library'"><i class="icon-database4"></i> <span>ข้อมูลหนังสือ-ทั้งหมด</span></button>
+										<button type="button" class="btn btn-default btn-float btn-float-lg content-group" onClick="location.href='<?php echo base_url();?>admin?library_mod=create_qrcode'"><i class="icon-shredder"></i> <span>จัดพิมพ์ QR Code และ Barcode หนังสือ</span></button>
+									</div>
+								</div>
+							</fieldset>
+
+						</div>				
 					</div>
 				</div>
 
+				<div classs="row">
+					<div class="col-<?php echo $grid;?>-6">
+						<div class="panel panel-body border-top-primary">
+							
+							<fieldset class="content-group">
+								<div class="row">
+									<div class="col-<?php echo $grid;?>-12">
+										<div style="font-family: surafont_sanukchang ; font-size: 16px; font-weight: bold;" class="no-margin text-semibold">ระบบยืมคืนหนังสือ</div>
+									</div>
+								</div>
+							</fieldset>
 
-			</div>
+							<fieldset class="content-group">
+								<div class="row">
+									<div class="col-<?php echo $grid;?>-12">
+										<button type="button" class="btn btn-default btn-float btn-float-lg content-group" onClick="location.href='<?php echo base_url();?>admin?library_mod=borrow_book'"><i class="icon-qrcode"></i> <span>ยืมหนังสือ</span></button>
+										<button type="button" class="btn btn-default btn-float btn-float-lg content-group" onClick="location.href='<?php echo base_url();?>admin?library_mod=return_book'"><i class="icon-barcode2"></i> <span>คืนหนังสือ</span></button>
+									</div>
+								</div>
+							</fieldset>	
+
+						</div>
+			
+					</div>
+					<div class="col-<?php echo $grid;?>-6"></div>
+				</div>
+
+			</fieldset>
+
+
+
 		</div>
 	</div>

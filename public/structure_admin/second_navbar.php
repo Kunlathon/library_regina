@@ -77,7 +77,7 @@
 					<a href="#">
 						<i class="icon-history position-left"></i>
 						Version
-						<span class="label label-inline position-right bg-success-400">UpDate 20240109001</span>
+						<span class="label label-inline position-right bg-success-400">UpDate 20240206002 11:39:04</span>
 					</a>
 				</li>
 

@@ -22,13 +22,13 @@
 			<div class="content-wrapper">
 				<div class="panel panel-body border-top-orange">
 					<div class="row">
-						<div class="col-sm-4 col-md-4 col-lg-4">
+						<div class="col-<?php echo $grid;?>-4">
 						
 						</div>
-						<div class="col-sm-4 col-md-4 col-lg-4">
+						<div class="col-<?php echo $grid;?>-4">
 						
 						</div>
-						<div class="col-sm-4 col-md-4 col-lg-4">
+						<div class="col-<?php echo $grid;?>-4">
 						
 						</div>
 					</div>
